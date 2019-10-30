@@ -1,0 +1,50 @@
+.footer {
+    padding: 50px;
+    background-color: #2F313A;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    color: white;
+}
+
+.footer .links {
+    display: grid;
+    grid-column: 1 / 4;
+    grid-template-rows: 2fr;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.footer .logo {
+    display: grid;
+    grid-column: 4 / 8;
+    text-align: center;
+}
+
+.footer .logo img {
+    justify-self: center;
+}
+
+.footer .redes {
+    display: grid;
+    grid-column: 8 / 12;
+}
+
+.footer .redes .endereco {
+    grid-column: 1 / 6;
+}
+
+.footer .redes .telefone {
+    grid-column: 6 / 12;
+}
+
+.footer .redes section::before {
+    content: "";
+    width: 30px;
+    border: 2px solid #43BEED;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.footer .redes img {
+    height: 19px;
+    width: 19px;
+}

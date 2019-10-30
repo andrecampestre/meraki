@@ -1,0 +1,38 @@
+.contato {
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.contato .imagem {
+    display: grid;
+    grid-column: 1 / 8;
+}
+
+.contato .texto {
+    display: grid;
+    grid-column: 8 / 12;
+}
+
+.contato .texto button{
+    background: #43BEED 0% 0% no-repeat padding-box;
+    box-shadow: 0px 10px 20px #00000029;
+    border-radius: 31px;
+    font: Bold 23px/44px Abril Text;
+    letter-spacing: 1.38px;
+    color: #FFFFFF;
+    width: fit-content;
+    height: fit-content;
+    padding: 3px 30px;
+}
+
+.contato .texto h2 {
+    font: Bold 35px/65px Abril Text;
+    letter-spacing: -0.7px;
+    color: #43BEED;
+}
+
+.contato .texto p {
+    font: Medium 16px/19px Montserrat;
+    color: #707070;
+}

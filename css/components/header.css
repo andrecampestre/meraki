@@ -1,0 +1,17 @@
+header {
+    background-color: #2C4C9A;
+    height: 127px;
+    position: sticky;
+    top: 0;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    z-index: 3;
+}
+
+header h3 {
+    font: Bold 18px/51px Sitka Banner;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
