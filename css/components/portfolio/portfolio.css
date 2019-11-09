@@ -1,0 +1,26 @@
+.portfolio {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 30px;
+    width: 100%;
+    padding: 100px 60px;
+}
+
+.portfolio section > img {
+    width: 100%;
+    box-shadow: 0px 20px 40px #00000029;
+}
+
+.portfolio section > h4 {
+    font: Medium 14px/18px Montserrat;
+    letter-spacing: -0.14px;
+    color: #43BEED;
+    margin: 20px 0;
+}
+
+.portfolio section > p {
+    font: Medium 14px/18px Montserrat;
+    letter-spacing: -0.14px;
+    color: #707070;
+}

@@ -1,0 +1,53 @@
+.banner {
+  height: 760px;
+  background: transparent url("../../../img/banner-5.png") 0% 0% no-repeat padding-box;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.banner__title {
+  margin-top: 180px;
+  margin-left: 330px;
+  font-size: 3.875em;
+  font-family: 'Abril Bold';
+  letter-spacing: 2.1px;
+  color: #43beed;
+  text-transform: uppercase;
+}
+
+.banner__subtitle {
+  font-size: 2.187em;
+  font-family: 'Abril Bold';
+  letter-spacing: 2.1px;
+  color: #2c4c9a;
+  margin-top: 20px;
+  margin-left: 330px;
+  width: 520px;
+}
+
+.banner__dots {
+  margin-top: 10px;
+  margin-left: 330px;
+  display: flex;
+}
+
+.dots__item {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 2px;
+  border-radius: 2px;
+  background-color: #2C4C9A;
+  opacity: .6;
+}
+
+.dots__item + .dots__item {
+  margin-left: 10px;
+}
+
+.dots__item--active {
+  width: 30px;
+  opacity: 1;
+}

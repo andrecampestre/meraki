@@ -1,0 +1,67 @@
+.sobre-nos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 50px;
+}
+
+.batalhas-gregas {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    padding: 50px;
+}
+
+.batalhas-gregas > section{
+    grid-column: 1 / 6;
+}
+
+.sobre-nos section > h1 {
+    font: Bold 28px/32px Abril Text;
+    color: #43BEED;
+}
+
+.sobre-nos section > p {
+    font: Medium 16px/19px Montserrat;
+    color: #707070;
+    padding: 20px 0;
+}
+
+.sobre-nos section > img {
+    transform: translateY(-20%);
+}
+
+.batalhas-gregas h1 {
+    font: Bold 28px/32px Abril Text;
+    color: #43BEED;
+}
+
+.batalhas-gregas p {
+    font: Medium 16px/19px Montserrat;
+    color: #707070;
+    padding: 20px 0;
+}
+
+.areas-atuacao {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 50px;
+}
+
+.areas-atuacao h1 {
+    font: Bold 28px/32px Abril Text;
+    color: #43BEED;
+}
+
+.areas-atuacao h4 {
+    font: Bold 22px/24px Abril Text;
+    color: #6C6C6C;
+    margin: 20px 0;
+}
+
+.areas-atuacao p {
+    font: Medium 14px/18px Montserrat;
+    color: #707070;
+}
+
+.areas-atuacao img {
+    justify-self: center;
+}

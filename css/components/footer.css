@@ -3,14 +3,21 @@
     background-color: #2F313A;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    color: white;
+    font: Bold 14px/12px Sitka Text;
+    color: #FFFFFF;
+}
+
+.footer h5 {
+    font: Bold 14px/12px Sitka Text;
+    color: #FFFFFF;
 }
 
 .footer .links {
     display: grid;
     grid-column: 1 / 4;
-    grid-template-rows: 2fr;
+    grid-template-rows: auto;
     grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
 }
 
 .footer .logo {
@@ -36,7 +43,7 @@
     grid-column: 6 / 12;
 }
 
-.footer .redes section::before {
+.footer .redes .endereco::before {
     content: "";
     width: 30px;
     border: 2px solid #43BEED;

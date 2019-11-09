@@ -1,0 +1,51 @@
+.sobre-nos {
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+  margin: 0 40px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  transform: translateY(-40%);
+  background-color: #ffffff;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 10px rgba(50, 50, 50, 0.3);
+  -moz-box-shadow: 0 1px 10px rgba(50, 50, 50, 0.3);
+  box-shadow: 0 1px 10px rgba(50, 50, 50, 0.3);
+}
+
+.text-container {
+  width: 500px;
+  justify-self: flex-end;
+}
+
+.text-container .button {
+  margin-top: 50px;
+}
+
+.title {
+  font-size: 1.75em;
+  font-family: 'Abril Bold';
+  letter-spacing: -0.56px;
+  color: #43beed;
+  margin-bottom: 30px;
+}
+
+.text {
+  font-size: 1em;
+  font-family: Montserrat;
+  font-weight: '500';
+  letter-spacing: 0;
+  color: #707070;
+}
+
+.text + .text {
+  margin-top: 20px;
+}
+
+.image-container {
+  justify-self: center;
+  align-self: center;
+}
+
+.image-container img {
+  width: 100%;
+}

@@ -1,64 +1,94 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <title>Meraki</title>
 
     <!--Fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap"
+      rel="stylesheet"
+    />
 
     <!--Arquivos base-->
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/base.css" />
 
     <!--Componentes-->
-    <link rel="stylesheet" href="css/components/header.css">
-    <link rel="stylesheet" href="css/components/banner.css">
-    <link rel="stylesheet" href="css/components/sobre-nos.css">
-    <link rel="stylesheet" href="css/components/areas-atuacao.css">
-    <link rel="stylesheet" href="css/components/contato.css">
-    <link rel="stylesheet" href="css/components/footer.css">
+    <link rel="stylesheet" href="css/components/header.css" />
+    <link rel="stylesheet" href="css/components/index/banner.css" />
+    <link rel="stylesheet" href="css/components/index/sobre-nos.css" />
+    <link rel="stylesheet" href="css/components/index/areas-atuacao.css" />
+    <link rel="stylesheet" href="css/components/index/contato.css" />
+    <link rel="stylesheet" href="css/components/footer.css" />
 
-<body>
-    <header>
-        <a href="#"><img src="./img/logo-meraki.png" alt="Meraki"></a>
-        <a href="#"><h3 class="">Home</h3></a>
-        <a href="#"><h3 class="">Sobre Nós</h3></a>
-        <a href="#"><h3 class="">Área de Atuação</h3></a>
-        <a href="#"><h3 class="">Portfólio</h3></a>
-        <a href="#"><h3 class="">Contato</h3></a>
-        <a href="#"><h3 class="">Orçamento</h3></a>
+    <link rel="stylesheet" href="css/objects/button.css">
+  </head>
+
+  <body>
+    <header class="header">
+      <span class="brand">
+        <a href="#"><img src="./img/logo-meraki.png" alt="Meraki"/></a>
+      </span>
+
+      <nav class="menu">
+        <a class="menu__link" href="#"><h3>Home</h3></a>
+        <a class="menu__link" href="#"><h3>Sobre Nós</h3></a>
+        <a class="menu__link" href="#"><h3>Áreas de Atuação</h3></a>
+        <a class="menu__link" href="#"><h3>Portfólio</h3></a>
+        <a class="menu__link" href="#"><h3>Contato</h3></a>
+        <a class="menu__link" href="#"><h3>Orçamento</h3></a>
+        <span class="contact">55 19 99692-9279</span>
+      </nav>
     </header>
 
     <section class="banner">
-        <h1>Meraki</h1>
-        <h2>SOLUÇÕES INTELIGENTES EM COMUNICAÇÃO!</h2>
+      <h2 class="banner__title">Meraki</h2>
+      <h3 class="banner__subtitle">SOLUÇÕES INTELIGENTES EM COMUNICAÇÃO!</h3>
+      <span class="banner__dots">
+        <span href="#item1" class="dots__item dots__item--active"></span>
+        <span href="#item2" class="dots__item"></span>
+      </span>
     </section>
 
-    <section class="sobre-nos">
-        <section class="texto">
-            <h3>Sobre Nós</h3>
-            <p>A Meraki nasceu com o objetivo de oferecer soluções inteligentes através do Marketing Digital e da
-                Publicidade e Propaganda. Mas você sabe o significado do nosso nome? A palavra Meraki vem do Grego:
-                “fazer algo com a alma, com a criatividade ou com amor. É o ato de colocar parte de si em algo que está
-                a se fazer”.</p>
-            <button>Saiba Mais</button>          
-        </section>
-        <section class="imagem">
-            <img src="./img/sobre-nos.png" alt="Meraki">
-        </section>
-    </section>
+    <main>
+      <section class="sobre-nos">
+        <section class="text-container">
+          <h2 class="title">Sobre Nós</h3>
+          <p class="text">
+            A Meraki nasceu com o objetivo de oferecer soluções inteligentes
+            através do Marketing Digital e da Publicidade e Propaganda. Mas você
+            sabe o significado do nosso nome?
+          </p>
+          <p class="text">
+            A palavra Meraki vem do Grego:
+            “fazer algo com a alma, com a criatividade ou com amor. É o ato de
+            colocar parte de si em algo que está a se fazer”.
+          </p>
 
-    <section class="areas-atuacao">
+          <button class="button button--light">SAIBA MAIS</button>
+        </section>
+        <section class="image-container">
+          <img src="./img/sobre-nos.png" alt="Meraki" />
+        </section>
+      </section>
+
+      <section class="areas-atuacao">
         <h2>Áreas de Atuação</h2>
-        <p>Podemos oferecer a você e ao seu negócio as melhores soluções na área de comunicação! Trabalhamos com:</p>
+        <p>
+          Podemos oferecer a você e ao seu negócio as melhores soluções na área
+          de comunicação! Trabalhamos com:
+        </p>
         <section class="solucoes">
-            <button><</button>
-            <section>
+          <a onclick="atualizaAreas(-1)" href="javascript:void(0)"
+            ><img src="./icons/angle-left.svg" alt="Anterior"
+          /></a>
+
+          <section class="areas"></section>
+          <!--<section>
                 <img src="./img/sobre-nos.png" alt="Logo 1">
                 <p>Comunicação para associações</p>
             </section>
@@ -69,57 +99,63 @@
             <section>
                 <img src="./img/sobre-nos.png" alt="Logo 1">
                 <p>Comunicação para eventos</p>
-            </section>
-            <button>></button>
+            </section> -->
+          <a onclick="atualizaAreas(+1)" href="javascript:void(0)"
+            ><img src="./icons/angle-right.svg" alt="Próximo"
+          /></a>
         </section>
         <p>Meraki: nossa criatividade a serviço do seu negócio!</p>
         <button>SAIBA MAIS</button>
-    </section>
+      </section>
 
-    <section class="contato">
+      <section class="contato">
         <section class="imagem">
-            <img src="./img/cidade.png" alt="Entre em contato">
+          <img src="./img/cidade.png" alt="Entre em contato" />
         </section>
         <section class="texto">
-            <h2>ENTRE EM CONTATO</h2>
-            <p>Tire suas dúvidas! Entre em contato conosco: teremos o prazer de explicar a você um pouco mais sobre
-                nosso trabalho!</p>
-            <button>SAIBA MAIS</button>
+          <h2>ENTRE EM CONTATO</h2>
+          <p>
+            Tire suas dúvidas! Entre em contato conosco: teremos o prazer de
+            explicar a você um pouco mais sobre nosso trabalho!
+          </p>
+          <button>SAIBA MAIS</button>
         </section>
-    </section>
+      </section>
+    </main>
 
-    <section class="footer">
-        <section class="links">
-            <p>Home</p>
-            <p>Portfólio</p>
-            <p>Contato</p>
-            <p>Sobre Nós</p>
-            <p>Áreas de Atuação</p>
-            <p>Orçamento</p>
+    <footer class="footer">
+      <section class="links">
+        <a href="#"><h5>Home</h5></a>
+        <a href="#"><h5>Portfólio</h5></a>
+        <a href="#"><h5>Contato</h5></a>
+        <a href="#"><h5>Sobre Nós</h5></a>
+        <a href="#"><h5>Áreas de Atuação</h5></a>
+        <a href="#"><h5>Orçamento</h5></a>
+      </section>
+      <section class="logo">
+        <img src="./img/footer.png" alt="Logo" />
+        <p>© 2019 MERAKI - Todos os direitos reservados</p>
+      </section>
+      <section class="redes">
+        <section class="endereco">
+          <p>
+            SIGA-NOS
+            <a href="#"><img src="./icons/instagram.svg" alt="Instagram"/></a>
+            <a href="#"><img src="./icons/facebook.svg" alt="Facebook"/></a>
+          </p>
+          <p>
+            Endereço: Rua Ministro Cunha Canto, 556, Sala 1, Mogi Mirim (SP)
+          </p>
         </section>
-        <section class="logo">
-            <img src="./img/footer.png" alt="Logo">
-            <p>© 2019 MERAKI - Todos os direitos reservados</p>
+        <section class="telefone">
+          <p>
+            55 19 99692-9279
+            <a href="#"><img src="./icons/whatsapp.svg" alt="Whatsapp"/></a>
+          </p>
         </section>
-        <section class="redes">
-            <section class="endereco">
-                <p>
-                    SIGA-NOS
-                    <a href="#"><img src="./icons/instagram.svg" alt="Instagram"></a>
-                    <a href="#"><img src="./icons/facebook.svg" alt="Facebook"></a>
-                </p>
-                <p>Endereço: Rua Ministro Cunha Canto, 556, Sala 1, Mogi Mirim (SP)</p>
-            </section>
-            <section class="telefone">
-                <p>
-                    55 19 99692-9279
-                    <a href="#"><img src="./icons/whatsapp.svg" alt="Whatsapp"></a>
-                </p>
-            </section>
-        </section>
-    </section>
-</body>
+      </section>
+    </footer>
+  </body>
 
-</head>
-
+  <script type="text/javascript" src="./js/areas-atuacao.js"></script>
 </html>
