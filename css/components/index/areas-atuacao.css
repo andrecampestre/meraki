@@ -4,7 +4,8 @@
 }
 
 .areas-atuacao h2 {
-    font: Bold 35px/65px Abril TextRegular;
+    font-size: 2.187em;
+    font-family: 'Abril Bold';
     letter-spacing: -0.7px;
     color: #43BEED;
     text-align: center;

@@ -20,7 +20,11 @@ function fillCarousel(items) {
         const titulo = document.createElement('p');
         titulo.innerText = area.titulo;
 
+        const imagem = document.createElement('img');
+        imagem.src = area.img;
+
         section.appendChild(titulo);
+        section.appendChild(imagem);
 
         areas_sections.append(section);
     });
