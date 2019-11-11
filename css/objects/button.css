@@ -21,3 +21,7 @@
 .button--light {
   background: #43beed 0% 0% no-repeat padding-box;
 }
+
+.button--dark {
+  background: #2c4c9a 0% 0% no-repeat padding-box;
+}

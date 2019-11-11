@@ -77,28 +77,31 @@
       </section>
 
       <section class="areas-atuacao">
-        <h2>Áreas de Atuação</h2>
-        <p>
+        <h2 class="title">Áreas de Atuação</h2>
+        <p class="text">
           Podemos oferecer a você e ao seu negócio as melhores soluções na área
           de comunicação! Trabalhamos com:
         </p>
+
         <section class="solucoes">
-          <a onclick="atualizaAreas(-1)" href="javascript:void(0)"
-            ><img src="./icons/angle-left.svg" alt="Anterior"
-          /></a>
+          <a onclick="atualizaAreas(-1)" class="control" href="javascript:void(0)" data-content="&#x3c;">
+            <!-- < -->
+            <!-- <img src="./icons/angle-left.svg" alt="Anterior" /> -->
+          </a>
 
           <section class="areas"></section>
-          <!--<section>
-                <img src="./img/sobre-nos.png" alt="Logo 1">
-                <p>Comunicação para associações</p>
-            </section>
-                <-->
-          <a onclick="atualizaAreas(+1)" href="javascript:void(0)"
-            ><img src="./icons/angle-right.svg" alt="Próximo"
-          /></a>
+
+          <a onclick="atualizaAreas(+1)" class="control" href="javascript:void(0)" data-content="&#x3e;">
+            <!-- <img src="./icons/angle-right.svg" alt="Próximo" /> -->
+            <!-- > -->
+          </a>
         </section>
-        <p>Meraki: nossa criatividade a serviço do seu negócio!</p>
-        <button>SAIBA MAIS</button>
+
+        <p class="text">
+          Meraki: nossa criatividade a serviço do seu negócio!
+        </p>
+
+        <button class="button button--dark">SAIBA MAIS</button>
       </section>
 
       <section class="contato">

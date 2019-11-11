@@ -16,15 +16,18 @@ function fillCarousel(items) {
 
     items.forEach(area => {
         const section = document.createElement('section');
+        section.classList.add('card');
 
         const titulo = document.createElement('p');
+        titulo.classList.add('card-text');
         titulo.innerText = area.titulo;
 
         const imagem = document.createElement('img');
+        imagem.classList.add('card-image')
         imagem.src = area.img;
 
-        section.appendChild(titulo);
         section.appendChild(imagem);
+        section.appendChild(titulo);
 
         areas_sections.append(section);
     });
