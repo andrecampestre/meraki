@@ -1,77 +1,92 @@
 .atendimento {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    padding: 100px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  padding: 100px;
+  grid-column-gap: 50px;
 }
 
 .atendimento .formulario {
-    display: inline-grid;
-    grid-column: 1 / 6;
-    grid-template-rows: auto;
+  display: inline-grid;
+  grid-column: 1 / 6;
+  grid-template-rows: auto;
 }
 
 .atendimento .mapa {
-    grid-column: 6 / 12;
-    grid-template-rows: auto;
+  grid-column: 6 / 12;
+  grid-template-rows: auto;
+}
+
+.atendimento .mapa .section-mapa{
+  height: 600px; /* altura fixa mapa */
 }
 
 .atendimento .formulario h1 {
-    font: Bold 47px/52px Abril Text;
-    color: #43BEED;
-    padding: 10px 0;
+  font: Bold 47px/52px Abril Text;
+  color: #43BEED;
+  padding: 10px 0;
 }
 
 .atendimento .formulario h1::before {
-    content: "";
-    width: 20px;
-    border: 1px solid #2C4C9A;
-    display: block;
-    margin-bottom: 10px;
+  content: "";
+  width: 20px;
+  border: 1px solid #2C4C9A;
+  display: block;
+  margin-bottom: 10px;
 }
 
 .atendimento .formulario h4 {
-    font: Medium 20px/24px Montserrat;
-    letter-spacing: 0.6px;
-    color: #838383;
-    padding: 10px 0;
+  font: Medium 20px/24px Montserrat;
+  letter-spacing: 0.6px;
+  color: #838383;
+  padding: 10px 0;
 }
 
 .atendimento .formulario p {
-    font: Medium 16px/20px Montserrat;
-    letter-spacing: 0.48px;
-    color: #898989;
-    padding: 10px 0;
+  font: Medium 16px/20px Montserrat;
+  letter-spacing: 0.48px;
+  color: #898989;
+  padding: 10px 0;
 }
 
 .atendimento .formulario input {
-    padding: 10px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
 .atendimento .formulario textarea {
-    padding: 10px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
 .atendimento .formulario a {
-    font: Bold 18px/32px Abril Text;
-    letter-spacing: 0.54px;
-    color: #43BEED;
+  font: Bold 18px/32px Abril Text;
+  letter-spacing: 0.54px;
+  color: #43BEED;
 }
 
 .atendimento .mapa .informacoes p {
-    font: Medium 14px/18px Montserrat;
-    letter-spacing: 0.42px;
-    color: #8D8D8D;
+  font: Medium 14px/18px Montserrat;
+  letter-spacing: 0.42px;
+  color: #8D8D8D;
 }
 
 .atendimento .mapa .informacoes p::before {
-    content: "";
-    width: 20px;
-    border: 1px solid #2C4C9A;
-    display: block;
-    margin-bottom: 10px;
+  content: "";
+  width: 20px;
+  border: 1px solid #2C4C9A;
+  display: block;
+  margin-bottom: 10px;
 }
 
 .atendimento .mapa .informacoes {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }

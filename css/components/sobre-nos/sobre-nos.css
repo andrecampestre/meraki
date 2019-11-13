@@ -42,7 +42,6 @@
 
 .areas-atuacao {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
     padding: 50px;
 }
 
@@ -51,17 +50,91 @@
     color: #43BEED;
 }
 
-.areas-atuacao h4 {
-    font: Bold 22px/24px Abril Text;
-    color: #6C6C6C;
-    margin: 20px 0;
+.areas-atuacao .areas-controle {
+  grid-column: 1 / 4;
 }
 
-.areas-atuacao p {
-    font: Medium 14px/18px Montserrat;
-    color: #707070;
+.areas-atuacao .areas-controle section{
+  display: inline-flex;
 }
 
-.areas-atuacao img {
-    justify-self: center;
+.areas-atuacao .areas {
+  display: grid;
+  grid-column: 4 / 12;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.areas-atuacao .areas .card {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-shrink: 1;
+  height: 100%;
+}
+
+.areas-atuacao .areas .card + .card {
+  margin-left: 40px;
+}
+
+.areas-atuacao .areas .card .card-image {
+  padding: 30px;
+  align-self: center;
+  justify-self: center;
+  background: #F7F7F7;
+}
+
+.areas-atuacao .areas .card .card-text {
+  padding: 20px 0;
+  font-size: 1.125em;
+  font-family: Montserrat;
+  font-weight: bold;
+  color: #6C6C6C;
+  justify-self: flex-start;
+}
+
+.areas-atuacao .areas .card .card-conteudo {
+  padding: 20px 0;
+  font-size: 0.875em;
+  font-family: Montserrat;
+  color: #707070;
+  justify-self: flex-start;
+}
+
+.areas-atuacao .areas-controle .control {
+  color: #ffffff;
+  width: 60px;
+  height: 60px;
+  border-radius: 32px;
+  background: #43beed 0% 0% no-repeat padding-box;
+  box-shadow: 0px 10px 20px #00000029;
+  cursor: pointer;
+}
+
+.areas-atuacao .areas-controle .control::after {
+  color: #ffffff;
+  z-index: 3;
+}
+
+.banner__dots {
+  margin-top: 10px;
+  display: flex;
+}
+
+.dots__item {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 2px;
+  border-radius: 2px;
+  background-color: #2C4C9A;
+  opacity: .6;
+}
+
+.dots__item + .dots__item {
+  margin-left: 10px;
+}
+
+.dots__item--active {
+  width: 30px;
+  opacity: 1;
 }

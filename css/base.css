@@ -32,3 +32,11 @@ main {
   letter-spacing: 0;
   color: #707070;
 }
+
+textarea::placeholder {
+  font-family: Montserrat;
+}
+
+input::placeholder {
+  font-family: Montserrat;
+}
