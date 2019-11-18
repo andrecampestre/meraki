@@ -33,3 +33,9 @@
 .image-container img {
   width: fit-content;
 }
+
+@media (max-width: 1400px) {
+  .sobre-nos {
+    padding: 60px;
+  }
+}

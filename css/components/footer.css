@@ -1,57 +1,66 @@
 .footer {
-    padding: 50px;
-    background-color: #2F313A;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    font: Bold 14px/12px Sitka Text;
-    color: #FFFFFF;
+  padding: 50px;
+  background-color: #2F313A;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  font: Bold 14px/12px Sitka Text;
+  color: #FFFFFF;
 }
 
 .footer h5 {
-    font: Bold 14px/12px Sitka Text;
-    color: #FFFFFF;
+  font: Bold 14px/12px Sitka Text;
+  color: #FFFFFF;
 }
 
 .footer .links {
-    display: grid;
-    grid-column: 1 / 4;
-    grid-template-rows: auto;
-    grid-template-columns: 1fr 2fr 1fr;
-    align-items: center;
+  display: grid;
+  grid-column: 1 / 4;
+  grid-template-rows: auto;
+  grid-template-columns: 2fr 3fr 1fr;
+  grid-column-gap: 10px;
+  align-items: center;
+}
+
+.footer .links .footer_link {
+  transition: opacity .2s ease-out;
+}
+
+.footer .links .footer_link:hover {
+  opacity: .6;
 }
 
 .footer .logo {
-    display: grid;
-    grid-column: 4 / 8;
-    text-align: center;
+  display: grid;
+  grid-column: 4 / 8;
+  text-align: center;
 }
 
 .footer .logo img {
-    justify-self: center;
+  justify-self: center;
 }
 
 .footer .redes {
-    display: grid;
-    grid-column: 8 / 12;
+  display: grid;
+  grid-column: 8 / 12;
 }
 
 .footer .redes .endereco {
-    grid-column: 1 / 6;
+  grid-column: 1 / 6;
 }
 
 .footer .redes .telefone {
-    grid-column: 6 / 12;
+  grid-column: 6 / 12;
 }
 
 .footer .redes .endereco::before {
-    content: "";
-    width: 30px;
-    border: 2px solid #43BEED;
-    display: block;
-    margin-bottom: 10px;
+  content: "";
+  width: 30px;
+  border: 2px solid #43BEED;
+  display: block;
+  margin-bottom: 10px;
 }
 
 .footer .redes img {
-    height: 19px;
-    width: 19px;
+  height: 19px;
+  width: 19px;
 }

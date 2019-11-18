@@ -51,3 +51,13 @@
   width: 30px;
   opacity: 1;
 }
+
+@media (max-width: 1400px) {
+  .banner__title {
+    margin-left: 200px;
+  }
+
+  .banner__subtitle {
+    margin-left: 200px;
+  }
+}
