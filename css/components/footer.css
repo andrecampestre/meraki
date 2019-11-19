@@ -1,23 +1,18 @@
 .footer {
   padding: 50px;
   background-color: #2F313A;
+  /* font: Bold 14px/12px Sitka Text; */
+  /* color: #FFFFFF; */
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  font: Bold 14px/12px Sitka Text;
-  color: #FFFFFF;
-}
-
-.footer h5 {
-  font: Bold 14px/12px Sitka Text;
-  color: #FFFFFF;
+  grid-template-columns: 4fr 2fr 4fr;
 }
 
 .footer .links {
-  display: grid;
-  grid-column: 1 / 4;
-  grid-template-rows: auto;
-  grid-template-columns: 2fr 3fr 1fr;
-  grid-column-gap: 10px;
+  display: flex;
+  /* grid-column: 1 / 4; */
+  /* grid-template-rows: auto; */
+  /* grid-template-columns: repeat(3, auto); */
+  /* grid-column-gap: 10px; */
   align-items: center;
 }
 
@@ -28,6 +23,12 @@
 .footer .links .footer_link:hover {
   opacity: .6;
 }
+
+.footer h5 {
+  font: Bold 14px/12px Sitka Text;
+  color: #FFFFFF;
+}
+
 
 .footer .logo {
   display: grid;
