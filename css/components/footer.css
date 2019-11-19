@@ -50,6 +50,10 @@
   width: 19px;
 }
 
+.footer .redes img:hover {
+  opacity: .8;
+}
+
 .footer .redes .endereco {
   display: flex;
   flex-direction: column;

@@ -1,63 +1,73 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <title>Meraki</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <!--Fonts-->
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap"
-      rel="stylesheet"
-    />
+  <title>Meraki</title>
 
-    <!--Arquivos base-->
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/base.css" />
+  <!--Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap" rel="stylesheet" />
 
-    <!--Componentes-->
-    <link rel="stylesheet" href="css/components/header.css" />
-    <link rel="stylesheet" href="css/components/index/banner.css" />
-    <link rel="stylesheet" href="css/components/index/sobre-nos.css" />
-    <link rel="stylesheet" href="css/components/index/areas-atuacao.css" />
-    <link rel="stylesheet" href="css/components/index/contato.css" />
-    <link rel="stylesheet" href="css/components/footer.css" />
+  <!--Arquivos base-->
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/base.css" />
 
-    <link rel="stylesheet" href="css/objects/button.css">
-  </head>
+  <!--Componentes-->
+  <link rel="stylesheet" href="css/components/header.css" />
+  <link rel="stylesheet" href="css/components/index/banner.css" />
+  <link rel="stylesheet" href="css/components/index/sobre-nos.css" />
+  <link rel="stylesheet" href="css/components/index/areas-atuacao.css" />
+  <link rel="stylesheet" href="css/components/index/contato.css" />
+  <link rel="stylesheet" href="css/components/footer.css" />
 
-  <body>
-    <header class="header">
-      <span class="brand">
-        <a href="#"><img src="./img/logo-meraki.png" alt="Meraki"/></a>
-      </span>
+  <link rel="stylesheet" href="css/objects/button.css">
+</head>
 
-      <nav class="menu">
-        <a class="menu__link" href="#"><h3>Home</h3></a>
-        <a class="menu__link" href="#"><h3>Sobre Nós</h3></a>
-        <a class="menu__link" href="#"><h3>Áreas de Atuação</h3></a>
-        <a class="menu__link" href="#"><h3>Portfólio</h3></a>
-        <a class="menu__link" href="#"><h3>Contato</h3></a>
-        <a class="menu__link" href="#"><h3>Orçamento</h3></a>
-        <span class="contact">55 19 99692-9279</span>
-      </nav>
-    </header>
+<body>
+  <header class="header">
+    <span class="brand">
+      <a href="#"><img src="./img/logo-meraki.png" alt="Meraki" /></a>
+    </span>
 
-    <section class="banner">
-      <h2 class="banner__title">Meraki</h2>
-      <h3 class="banner__subtitle">SOLUÇÕES INTELIGENTES EM COMUNICAÇÃO!</h3>
-      <span class="banner__dots">
-        <span href="#item1" class="dots__item dots__item--active"></span>
-        <span href="#item2" class="dots__item"></span>
-      </span>
-    </section>
+    <nav class="menu">
+      <a class="menu__link" href="#">
+        <h3>Home</h3>
+      </a>
+      <a class="menu__link" href="#">
+        <h3>Sobre Nós</h3>
+      </a>
+      <a class="menu__link" href="#">
+        <h3>Áreas de Atuação</h3>
+      </a>
+      <a class="menu__link" href="#">
+        <h3>Portfólio</h3>
+      </a>
+      <a class="menu__link" href="#">
+        <h3>Contato</h3>
+      </a>
+      <a class="menu__link" href="#">
+        <h3>Orçamento</h3>
+      </a>
+      <span class="contact">55 19 99692-9279</span>
+    </nav>
+  </header>
 
-    <main>
-      <section class="sobre-nos">
-        <section class="text-container">
-          <h2 class="title">Sobre Nós</h3>
+  <section class="banner">
+    <h2 class="banner__title">Meraki</h2>
+    <h3 class="banner__subtitle">SOLUÇÕES INTELIGENTES EM COMUNICAÇÃO!</h3>
+    <span class="banner__dots">
+      <span href="#item1" class="dots__item dots__item--active"></span>
+      <span href="#item2" class="dots__item"></span>
+    </span>
+  </section>
+
+  <main>
+    <section class="sobre-nos">
+      <section class="text-container">
+        <h2 class="title">Sobre Nós</h3>
           <p class="text">
             A Meraki nasceu com o objetivo de oferecer soluções inteligentes
             através do Marketing Digital e da Publicidade e Propaganda. Mas você
@@ -70,102 +80,105 @@
           </p>
 
           <button class="button button--light">SAIBA MAIS</button>
-        </section>
-        <section class="image-container">
-          <img src="./img/sobre-nos.png" alt="Meraki" />
-        </section>
+      </section>
+      <section class="image-container">
+        <img src="./img/sobre-nos.png" alt="Meraki" />
+      </section>
+    </section>
+
+    <section class="areas-atuacao">
+      <h2 class="title">Áreas de Atuação</h2>
+      <p class="text">
+        Podemos oferecer a você e ao seu negócio as melhores soluções na área
+        de comunicação! Trabalhamos com:
+      </p>
+
+      <section class="solucoes">
+        <a onclick="atualizaAreas(-1)" class="control" href="javascript:void(0)">
+          <svg viewBox="0 0 477.175 477.175" style="margin-right: 5px;">
+            <path
+              d="M145.188,238.575l215.5-215.5c5.3-5.3,5.3-13.8,0-19.1s-13.8-5.3-19.1,0l-225.1,225.1c-5.3,5.3-5.3,13.8,0,19.1l225.1,225 c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4c5.3-5.3,5.3-13.8,0-19.1L145.188,238.575z" />
+          </svg>
+        </a>
+
+        <section class="areas"></section>
+
+        <a onclick="atualizaAreas(+1)" class="control" href="javascript:void(0)">
+          <svg viewBox="0 0 477.175 477.175" style="margin-left: 5px;">
+            <path
+              d="M360.731,229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1,0s-5.3,13.8,0,19.1l215.5,215.5l-215.5,215.5 c-5.3,5.3-5.3,13.8,0,19.1c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-4l225.1-225.1C365.931,242.875,365.931,234.275,360.731,229.075z" />
+          </svg>
+        </a>
       </section>
 
-      <section class="areas-atuacao">
-        <h2 class="title">Áreas de Atuação</h2>
+      <p class="text">
+        Meraki: nossa criatividade a serviço do seu negócio!
+      </p>
+
+      <button class="button button--dark">SAIBA MAIS</button>
+    </section>
+
+    <section class="contato">
+      <section>
+        <img src="./img/cidade.png" alt="Entre em contato" />
+      </section>
+      <section>
+        <h2 class="title">ENTRE EM CONTATO</h2>
         <p class="text">
-          Podemos oferecer a você e ao seu negócio as melhores soluções na área
-          de comunicação! Trabalhamos com:
+          Tire suas dúvidas! Entre em contato conosco:
+          <br />
+          Teremos o prazer de explicar a você um pouco mais sobre nosso trabalho!
         </p>
 
-        <section class="solucoes">
-          <a onclick="atualizaAreas(-1)" class="control" href="javascript:void(0)">
-            <svg viewBox="0 0 477.175 477.175" style="margin-right: 5px;">
-              <path d="M145.188,238.575l215.5-215.5c5.3-5.3,5.3-13.8,0-19.1s-13.8-5.3-19.1,0l-225.1,225.1c-5.3,5.3-5.3,13.8,0,19.1l225.1,225 c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4c5.3-5.3,5.3-13.8,0-19.1L145.188,238.575z" />
-            </svg>
+        <button class="button button--light">SAIBA MAIS</button>
+      </section>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <section class="links">
+      <a class="footer_link" href="#">Home</a>
+      <a class="footer_link" href="#">Portfólio</a>
+      <a class="footer_link" href="#">Contato</a>
+      <a class="footer_link" href="#">Sobre</a>
+      <a class="footer_link" href="#">Áreas</a>
+      <a class="footer_link" href="#">Orçamento</a>
+    </section>
+
+    <section class="logo">
+      <img src="./img/footer.png" alt="Logo" />
+      <p class="text">© 2019 MERAKI - Todos os direitos reservados</p>
+    </section>
+
+    <section class="redes">
+      <section class="endereco">
+        <p>
+          SIGA-NOS
+          <a href="#">
+            <img src="./icons/instagram.svg" alt="Instagram" />
           </a>
-
-          <section class="areas"></section>
-
-          <a onclick="atualizaAreas(+1)" class="control" href="javascript:void(0)">
-            <svg viewBox="0 0 477.175 477.175" style="margin-left: 5px;">
-              <path d="M360.731,229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1,0s-5.3,13.8,0,19.1l215.5,215.5l-215.5,215.5 c-5.3,5.3-5.3,13.8,0,19.1c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-4l225.1-225.1C365.931,242.875,365.931,234.275,360.731,229.075z" />
-            </svg>
+          <a href="#">
+            <img src="./icons/facebook.svg" alt="Facebook" />
           </a>
-        </section>
-
-        <p class="text">
-          Meraki: nossa criatividade a serviço do seu negócio!
         </p>
 
-        <button class="button button--dark">SAIBA MAIS</button>
+        <address>
+          Endereço: Rua Ministro Cunha Canto, 556,
+          <br />
+          Sala 1, Mogi Mirim (SP)
+        </address>
       </section>
 
-      <section class="contato">
-        <section>
-          <img src="./img/cidade.png" alt="Entre em contato" />
-        </section>
-        <section>
-          <h2 class="title">ENTRE EM CONTATO</h2>
-          <p class="text">
-            Tire suas dúvidas! Entre em contato conosco:
-            <br />
-            Teremos o prazer de explicar a você um pouco mais sobre nosso trabalho!
-          </p>
-
-          <button class="button button--light">SAIBA MAIS</button>
-        </section>
+      <section class="telefone">
+        <p>
+          55 19 99692-9279
+          <a href="#"><img src="./icons/whatsapp.svg" alt="Whatsapp" /></a>
+        </p>
       </section>
-    </main>
+    </section>
+  </footer>
+</body>
 
-    <footer class="footer">
-      <section class="links">
-        <a class="footer_link" href="#">Home</a>
-        <a class="footer_link" href="#">Portfólio</a>
-        <a class="footer_link" href="#">Contato</a>
-        <a class="footer_link" href="#">Sobre</a>
-        <a class="footer_link" href="#">Áreas</a>
-        <a class="footer_link" href="#">Orçamento</a>
-      </section>
+<script type="text/javascript" src="./js/index/areas-atuacao.js"></script>
 
-      <section class="logo">
-        <img src="./img/footer.png" alt="Logo" />
-        <p class="text">© 2019 MERAKI - Todos os direitos reservados</p>
-      </section>
-
-      <section class="redes">
-        <section class="endereco">
-          <p>
-            SIGA-NOS
-            <a href="#">
-              <img src="./icons/instagram.svg" alt="Instagram"/>
-            </a>
-            <a href="#">
-              <img src="./icons/facebook.svg" alt="Facebook"/>
-            </a>
-          </p>
-
-          <address>
-            Endereço: Rua Ministro Cunha Canto, 556,
-            <br />
-            Sala 1, Mogi Mirim (SP)
-          </address>
-        </section>
-
-        <section class="telefone">
-          <p>
-            55 19 99692-9279
-            <a href="#"><img src="./icons/whatsapp.svg" alt="Whatsapp"/></a>
-          </p>
-        </section>
-      </section>
-    </footer>
-  </body>
-
-  <script type="text/javascript" src="./js/index/areas-atuacao.js"></script>
 </html>

@@ -49,7 +49,7 @@ function atualizaAreas(incremento) {
   if (idNovo == 0) idNovo = 1;
   else if (idNovo >= 3) idNovo = 3;
 
-  const itemNovo = document.querySelector('#item'+idNovo);
+  const itemNovo = document.querySelector('#item' + idNovo);
 
   itemNovo.classList.add('dots__item--active');
 
