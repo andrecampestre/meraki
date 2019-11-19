@@ -41,6 +41,18 @@ function fillCarousel(items) {
 function atualizaAreas(incremento) {
   const newPage = currentPage + incremento;
 
+  const itemAtual = document.querySelector('.dots__item--active');
+  itemAtual.classList.remove('dots__item--active');
+
+  let idNovo = parseInt(itemAtual.dataset.id) + incremento;
+
+  if (idNovo == 0) idNovo = 1;
+  else if (idNovo >= 3) idNovo = 3;
+
+  const itemNovo = document.querySelector('#item'+idNovo);
+
+  itemNovo.classList.add('dots__item--active');
+
   if (newPage + 3 > areas.length || newPage < 0) return;
 
   currentPage = newPage;

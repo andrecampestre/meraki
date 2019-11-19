@@ -42,12 +42,14 @@
 
 .areas-atuacao {
     display: grid;
+    grid-template-columns: repeat(12, 1fr);
     padding: 50px;
 }
 
 .areas-atuacao h1 {
     font: Bold 28px/32px Abril Text;
     color: #43BEED;
+    margin-bottom: 3em;
 }
 
 .areas-atuacao .areas-controle {
@@ -56,6 +58,10 @@
 
 .areas-atuacao .areas-controle section{
   display: inline-flex;
+}
+
+.areas-atuacao .areas-controle a{
+  text-align: center;
 }
 
 .areas-atuacao .areas {
@@ -100,16 +106,6 @@
   justify-self: flex-start;
 }
 
-.areas-atuacao .areas-controle .control {
-  color: #ffffff;
-  width: 60px;
-  height: 60px;
-  border-radius: 32px;
-  background: #43beed 0% 0% no-repeat padding-box;
-  box-shadow: 0px 10px 20px #00000029;
-  cursor: pointer;
-}
-
 .areas-atuacao .areas-controle .control::after {
   color: #ffffff;
   z-index: 3;
@@ -135,6 +131,11 @@
 }
 
 .dots__item--active {
-  width: 30px;
   opacity: 1;
+}
+
+.control > svg {
+  fill: #43beed;
+  width: 50%;
+  height: 50%;
 }
