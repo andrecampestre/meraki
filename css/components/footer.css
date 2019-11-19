@@ -1,22 +1,24 @@
 .footer {
-  padding: 50px;
+  padding: 60px 10vw;
   background-color: #2F313A;
-  /* font: Bold 14px/12px Sitka Text; */
-  /* color: #FFFFFF; */
   display: grid;
-  grid-template-columns: 4fr 2fr 4fr;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: center;
 }
 
 .footer .links {
-  display: flex;
-  /* grid-column: 1 / 4; */
-  /* grid-template-rows: auto; */
-  /* grid-template-columns: repeat(3, auto); */
-  /* grid-column-gap: 10px; */
+  display: grid;
+  grid-row-gap: 20px;
+  grid-template-columns: repeat(3, auto);
   align-items: center;
 }
 
 .footer .links .footer_link {
+  font-size: 0.875em;
+  font-family: Sitka;
+  font-weight: bold;
+  color: #FFFFFF;
   transition: opacity .2s ease-out;
 }
 
@@ -24,16 +26,14 @@
   opacity: .6;
 }
 
-.footer h5 {
-  font: Bold 14px/12px Sitka Text;
-  color: #FFFFFF;
+.footer .logo {
+  text-align: center;
 }
 
-
-.footer .logo {
-  display: grid;
-  grid-column: 4 / 8;
-  text-align: center;
+.footer .logo .text {
+  font-size: 0.75em;
+  font-family: Sitka;
+  color: #FFFFFF;
 }
 
 .footer .logo img {
@@ -42,26 +42,66 @@
 
 .footer .redes {
   display: grid;
-  grid-column: 8 / 12;
-}
-
-.footer .redes .endereco {
-  grid-column: 1 / 6;
-}
-
-.footer .redes .telefone {
-  grid-column: 6 / 12;
-}
-
-.footer .redes .endereco::before {
-  content: "";
-  width: 30px;
-  border: 2px solid #43BEED;
-  display: block;
-  margin-bottom: 10px;
+  grid-template-columns: 1fr 1fr;
 }
 
 .footer .redes img {
   height: 19px;
   width: 19px;
+}
+
+.footer .redes .endereco {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer .redes .endereco::before {
+  content: "";
+  width: 32px;
+  border: 1px solid #43BEED;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.footer .redes .endereco p,
+.footer .redes .endereco a,
+.footer .redes .endereco address {
+  font-size: 0.625em;
+  font-family: Sitka;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+.footer .redes .endereco p {
+  display: flex;
+  align-items: center;
+}
+
+.footer .redes .endereco a {
+  margin-left: 20px;
+}
+
+.footer .redes .endereco address {
+  font-style: normal;
+  font-weight: normal;
+  margin-top: 20px;
+}
+
+.footer .redes .telefone {
+  display: flex;
+  align-items: flex-start;
+}
+
+.footer .redes .telefone p {
+  font-size: 0.875em;
+  font-family: Montserrat;
+  font-weight: bold;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+}
+
+.footer .redes .telefone a {
+  margin-left: 20px;
 }
