@@ -1,14 +1,23 @@
 let currentPage = 0;
 
 areas = [
-  { id: 0, img: "./../img/sobre-nos.png", titulo: "Comunicação para associações", conteudo: "Mais cedo ou mais tarde será necessário marcar presença na internet: nas redes sociais, através de site, blog, entre outros. Calma não estamos falando grego! Por esses canais você terá a oportunidade de mostrar seu produto ou serviço e também manterá uma relação mais próxima com os clientes. A Meraki desenvolve estratégias para que a sua empresa se destaque no mercado!" },
-  { id: 1, img: "./../img/sobre-nos.png", titulo: "Desenvolvimento de sites", conteudo: "Mais cedo ou mais tarde será necessário marcar presença na internet: nas redes sociais, através de site, blog, entre outros. Calma não estamos falando grego! Por esses canais você terá a oportunidade de mostrar seu produto ou serviço e também manterá uma relação mais próxima com os clientes. A Meraki desenvolve estratégias para que a sua empresa se destaque no mercado!" },
-  { id: 2, img: "./../img/sobre-nos.png", titulo: "Comunicação para eventos", conteudo: "Mais cedo ou mais tarde será necessário marcar presença na internet: nas redes sociais, através de site, blog, entre outros. Calma não estamos falando grego! Por esses canais você terá a oportunidade de mostrar seu produto ou serviço e também manterá uma relação mais próxima com os clientes. A Meraki desenvolve estratégias para que a sua empresa se destaque no mercado!" },
-  { id: 3, img: "./../img/sobre-nos.png", titulo: "Comunicação para associações", conteudo: "Mais cedo ou mais tarde será necessário marcar presença na internet: nas redes sociais, através de site, blog, entre outros. Calma não estamos falando grego! Por esses canais você terá a oportunidade de mostrar seu produto ou serviço e também manterá uma relação mais próxima com os clientes. A Meraki desenvolve estratégias para que a sua empresa se destaque no mercado!" },
-  { id: 4, img: "./../img/sobre-nos.png", titulo: "Desenvolvimento de sites", conteudo: "Mais cedo ou mais tarde será necessário marcar presença na internet: nas redes sociais, através de site, blog, entre outros. Calma não estamos falando grego! Por esses canais você terá a oportunidade de mostrar seu produto ou serviço e também manterá uma relação mais próxima com os clientes. A Meraki desenvolve estratégias para que a sua empresa se destaque no mercado!" },
-  { id: 5, img: "./../img/sobre-nos.png", titulo: "Comunicação para eventos", conteudo: "Mais cedo ou mais tarde será necessário marcar presença na internet: nas redes sociais, através de site, blog, entre outros. Calma não estamos falando grego! Por esses canais você terá a oportunidade de mostrar seu produto ou serviço e também manterá uma relação mais próxima com os clientes. A Meraki desenvolve estratégias para que a sua empresa se destaque no mercado!" },
-  { id: 6, img: "./../img/sobre-nos.png", titulo: "Comunicação para eventos", conteudo: "Mais cedo ou mais tarde será necessário marcar presença na internet: nas redes sociais, através de site, blog, entre outros. Calma não estamos falando grego! Por esses canais você terá a oportunidade de mostrar seu produto ou serviço e também manterá uma relação mais próxima com os clientes. A Meraki desenvolve estratégias para que a sua empresa se destaque no mercado!" },
+  { id: 0, img: "./../../img/Icon 3.png", titulo: "Comunicação para associações 1", conteudo: "Mais cedo ou mais tarde será necessário marcar presença na internet: nas redes sociais, através de site, blog, entre outros. Calma não estamos falando grego! Por esses canais você terá a oportunidade de mostrar seu produto ou serviço e também manterá uma relação mais próxima com os clientes. A Meraki desenvolve estratégias para que a sua empresa se destaque no mercado!" },
+  { id: 1, img: "./../../img/icon1.png", titulo: "Desenvolvimento de sites 2", conteudo: "Mais cedo ou mais tarde será necessário marcar presença na internet: nas redes sociais, através de site, blog, entre outros. Calma não estamos falando grego! Por esses canais você terá a oportunidade de mostrar seu produto ou serviço e também manterá uma relação mais próxima com os clientes. A Meraki desenvolve estratégias para que a sua empresa se destaque no mercado!" },
+  { id: 2, img: "./../../img/Icon2.png", titulo: "Comunicação para eventos 3", conteudo: "Mais cedo ou mais tarde será necessário marcar presença na internet: nas redes sociais, através de site, blog, entre outros. Calma não estamos falando grego! Por esses canais você terá a oportunidade de mostrar seu produto ou serviço e também manterá uma relação mais próxima com os clientes. A Meraki desenvolve estratégias para que a sua empresa se destaque no mercado!" },
+  { id: 3, img: "./../../img/Icon4.png", titulo: "Comunicação para associações 4", conteudo: "Mais cedo ou mais tarde será necessário marcar presença na internet: nas redes sociais, através de site, blog, entre outros. Calma não estamos falando grego! Por esses canais você terá a oportunidade de mostrar seu produto ou serviço e também manterá uma relação mais próxima com os clientes. A Meraki desenvolve estratégias para que a sua empresa se destaque no mercado!" },
+  { id: 4, img: "./../../img/Icon5.png", titulo: "Desenvolvimento de sites 5", conteudo: "Mais cedo ou mais tarde será necessário marcar presença na internet: nas redes sociais, através de site, blog, entre outros. Calma não estamos falando grego! Por esses canais você terá a oportunidade de mostrar seu produto ou serviço e também manterá uma relação mais próxima com os clientes. A Meraki desenvolve estratégias para que a sua empresa se destaque no mercado!" },
+  { id: 5, img: "./../../img/Icon2.png", titulo: "Comunicação para eventos 6", conteudo: "Mais cedo ou mais tarde será necessário marcar presença na internet: nas redes sociais, através de site, blog, entre outros. Calma não estamos falando grego! Por esses canais você terá a oportunidade de mostrar seu produto ou serviço e também manterá uma relação mais próxima com os clientes. A Meraki desenvolve estratégias para que a sua empresa se destaque no mercado!" },
+  { id: 6, img: "./../../img/Icon4.png", titulo: "Comunicação para eventos 7", conteudo: "Mais cedo ou mais tarde será necessário marcar presença na internet: nas redes sociais, através de site, blog, entre outros. Calma não estamos falando grego! Por esses canais você terá a oportunidade de mostrar seu produto ou serviço e também manterá uma relação mais próxima com os clientes. A Meraki desenvolve estratégias para que a sua empresa se destaque no mercado!" },
+  { id: 7, img: "./../../img/Icon5.png", titulo: "Comunicação para eventos 8", conteudo: "Mais cedo ou mais tarde será necessário marcar presença na internet: nas redes sociais, através de site, blog, entre outros. Calma não estamos falando grego! Por esses canais você terá a oportunidade de mostrar seu produto ou serviço e também manterá uma relação mais próxima com os clientes. A Meraki desenvolve estratégias para que a sua empresa se destaque no mercado!" },
+  { id: 8, img: "./../../img/Icon4.png", titulo: "Comunicação para eventos 9", conteudo: "Mais cedo ou mais tarde será necessário marcar presença na internet: nas redes sociais, através de site, blog, entre outros. Calma não estamos falando grego! Por esses canais você terá a oportunidade de mostrar seu produto ou serviço e também manterá uma relação mais próxima com os clientes. A Meraki desenvolve estratégias para que a sua empresa se destaque no mercado!" },
+  { id: 9, img: "./../../img/Icon5.png", titulo: "Comunicação para eventos 10", conteudo: "Mais cedo ou mais tarde será necessário marcar presença na internet: nas redes sociais, através de site, blog, entre outros. Calma não estamos falando grego! Por esses canais você terá a oportunidade de mostrar seu produto ou serviço e também manterá uma relação mais próxima com os clientes. A Meraki desenvolve estratégias para que a sua empresa se destaque no mercado!" },
+  { id: 10, img: "./../../img/Icon2.png", titulo: "Comunicação para eventos 11", conteudo: "Mais cedo ou mais tarde será necessário marcar presença na internet: nas redes sociais, através de site, blog, entre outros. Calma não estamos falando grego! Por esses canais você terá a oportunidade de mostrar seu produto ou serviço e também manterá uma relação mais próxima com os clientes. A Meraki desenvolve estratégias para que a sua empresa se destaque no mercado!" },
+  { id: 11, img: "./../../img/Icon4.png", titulo: "Comunicação para eventos 12", conteudo: "Mais cedo ou mais tarde será necessário marcar presença na internet: nas redes sociais, através de site, blog, entre outros. Calma não estamos falando grego! Por esses canais você terá a oportunidade de mostrar seu produto ou serviço e também manterá uma relação mais próxima com os clientes. A Meraki desenvolve estratégias para que a sua empresa se destaque no mercado!" },
 ];
+
+const qtdAreas = areas.length;
+
+const qtdLinks = Math.ceil(qtdAreas / 3);
 
 function fillCarousel(items) {
   const areas_sections = document.querySelector('.areas');
@@ -47,7 +56,7 @@ function atualizaAreas(incremento) {
   let idNovo = parseInt(itemAtual.dataset.id) + incremento;
 
   if (idNovo == 0) idNovo = 1;
-  else if (idNovo >= 3) idNovo = 3;
+  else if (idNovo >= qtdLinks) idNovo = qtdLinks;
 
   const itemNovo = document.querySelector('#item' + idNovo);
 
@@ -57,13 +66,36 @@ function atualizaAreas(incremento) {
 
   currentPage = newPage;
 
-  const items = areas.slice(currentPage, currentPage + 3);
+  const items = areas.slice(currentPage + 3, currentPage + 6);
 
   fillCarousel(items);
 }
 
 window.onload = function () {
   const items = areas.slice(0, 3);
+
+  const div = document.querySelector('.banner__dots');
+  // const qtd = document.getElementById('banner__dots').children.length;
+
+  const link = document.createElement('div');
+  link.id = "item1";
+  link.classList.add('dots__item');
+  link.classList.add('dots__item--active');
+  link.setAttribute('data-id', '1');
+
+  div.appendChild(link);
+
+  if (qtdLinks > 1) {
+    for (var i = 2; i <= qtdLinks; i++) {
+      let link = document.createElement('div');
+      link.id = "item" + i;
+      link.classList.add('dots__item');
+      link.setAttribute('data-id', i);
+
+      div.appendChild(link);
+    }
+  }
+
 
   fillCarousel(items);
 }

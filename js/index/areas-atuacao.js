@@ -1,13 +1,13 @@
 let currentPage = 0;
 
 areas = [
-  { id: 0, img: "./../img/sobre-nos.png", titulo: "Comunicação para associações" },
-  { id: 1, img: "./../img/sobre-nos.png", titulo: "Desenvolvimento de sites" },
-  { id: 2, img: "./../img/sobre-nos.png", titulo: "Comunicação para eventos" },
-  { id: 3, img: "./../img/sobre-nos.png", titulo: "Comunicação para associações" },
-  { id: 4, img: "./../img/sobre-nos.png", titulo: "Desenvolvimento de sites" },
-  { id: 5, img: "./../img/sobre-nos.png", titulo: "Comunicação para eventos" },
-  { id: 6, img: "./../img/sobre-nos.png", titulo: "Comunicação para eventos" },
+  { id: 0, img: "./../../img/Icon 3.png", titulo: "Comunicação para associações" },
+  { id: 1, img: "./../../img/icon1.png", titulo: "Desenvolvimento de sites" },
+  { id: 2, img: "./../../img/Icon2.png", titulo: "Comunicação para eventos" },
+  { id: 3, img: "./../../img/Icon4.png", titulo: "Comunicação para associações" },
+  { id: 4, img: "./../../img/Icon5.png", titulo: "Desenvolvimento de sites" },
+  { id: 5, img: "./../../img/Icon4.png", titulo: "Comunicação para eventos" },
+  { id: 6, img: "./../../img/Icon2.png", titulo: "Comunicação para eventos" },
 ];
 
 function fillCarousel(items) {

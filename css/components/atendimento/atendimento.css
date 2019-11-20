@@ -70,6 +70,7 @@
   font: Bold 18px/32px Abril Text;
   letter-spacing: 0.54px;
   color: #43BEED;
+  text-align: right;
 }
 
 .atendimento .mapa .informacoes p {
