@@ -62,12 +62,11 @@ function atualizaAreas(incremento) {
 
   itemNovo.classList.add('dots__item--active');
 
-  if (newPage + 3 > areas.length || newPage < 0) return;
+  if (newPage >= qtdLinks || newPage < 0) return;
 
   currentPage = newPage;
 
-  const items = areas.slice(currentPage + 3, currentPage + 6);
-
+  const items = areas.slice(currentPage * 3, (currentPage * 3) + 3);
   fillCarousel(items);
 }
 
