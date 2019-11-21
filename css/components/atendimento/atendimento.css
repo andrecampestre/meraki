@@ -17,13 +17,16 @@
 }
 
 .atendimento .mapa .section-mapa{
-  height: 600px; /* altura fixa mapa */
+  height: 100%;
+  margin-top: -100px;
+  margin-right: -200px;
+  margin-bottom: 20px;
 }
 
 .atendimento .formulario h1 {
   font: Bold 47px/52px Abril Text;
   color: #43BEED;
-  padding: 10px 0;
+  padding: 20px 0;
 }
 
 .atendimento .formulario h1::before {
@@ -45,7 +48,7 @@
   font: Medium 16px/20px Montserrat;
   letter-spacing: 0.48px;
   color: #898989;
-  padding: 10px 0;
+  padding: 20px 0;
 }
 
 .atendimento .formulario input {
