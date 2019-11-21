@@ -1,26 +1,13 @@
 .atendimento {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  padding: 100px;
+  grid-template-columns: 1fr 1fr;
   grid-column-gap: 50px;
 }
 
 .atendimento .formulario {
   display: inline-grid;
-  grid-column: 1 / 6;
   grid-template-rows: auto;
-}
-
-.atendimento .mapa {
-  grid-column: 6 / 12;
-  grid-template-rows: auto;
-}
-
-.atendimento .mapa .section-mapa{
-  height: 100%;
-  margin-top: -100px;
-  margin-right: -200px;
-  margin-bottom: 20px;
+  padding: 100px 0 100px 10vw;
 }
 
 .atendimento .formulario h1 {
@@ -76,6 +63,16 @@
   text-align: right;
 }
 
+.atendimento .mapa {
+  display: flex;
+  flex-direction: column;
+}
+
+.atendimento .mapa .section-mapa{
+  height: 600px;
+  margin-bottom: 30px;
+}
+
 .atendimento .mapa .informacoes p {
   font: Medium 14px/18px Montserrat;
   letter-spacing: 0.42px;
@@ -95,11 +92,7 @@
   grid-template-columns: 1fr 1fr;
 }
 
-/* main {
-  padding: 0 -10vw;
-  }
-
-@media (min-width: 1400px) {
+/* @media (min-width: 1400px) {
   main {
     padding-right: 0 !important;
   }
