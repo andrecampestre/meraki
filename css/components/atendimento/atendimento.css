@@ -95,12 +95,18 @@
   grid-template-columns: 1fr 1fr;
 }
 
-main {
+/* main {
   padding: 0 -10vw;
   }
 
 @media (min-width: 1400px) {
   main {
     padding-right: 0 !important;
+  }
+} */
+
+@media (max-width: 1400px) {
+  main {
+    padding: 0 0;
   }
 }

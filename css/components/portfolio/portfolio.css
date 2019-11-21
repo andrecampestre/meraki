@@ -28,3 +28,9 @@
   letter-spacing: -0.14px;
   color: #707070;
 }
+
+@media (max-width: 1400px) {
+  main {
+    padding: 0 1vw;
+  }
+}

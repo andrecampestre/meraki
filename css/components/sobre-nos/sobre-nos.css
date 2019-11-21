@@ -1,6 +1,7 @@
 .sobre-nos {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
     padding: 50px;
 }
 
@@ -144,4 +145,10 @@
 
 .control:hover {
   opacity: .7;
+}
+
+@media (max-width: 1400px) {
+  main {
+    padding: 0 1vw;
+  }
 }
