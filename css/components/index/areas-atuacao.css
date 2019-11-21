@@ -55,9 +55,11 @@
 }
 
 .areas-atuacao .areas .card .card-image {
-  padding: 30px;
+  padding: 50px;
   align-self: center;
   justify-self: center;
+  height: 220px;
+  width: 220px;
 }
 
 .areas-atuacao .areas .card .card-text {

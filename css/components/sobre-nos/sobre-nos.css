@@ -83,10 +83,12 @@
 }
 
 .areas-atuacao .areas .card .card-image {
-  padding: 30px;
+  padding: 30px 60px;
   align-self: center;
   justify-self: center;
   background: #F7F7F7;
+  height: 250px;
+  width: 280px;
 }
 
 .areas-atuacao .areas .card .card-text {
