@@ -147,8 +147,16 @@
   opacity: .7;
 }
 
+/* MEDIAS */
+
 @media (max-width: 1400px) {
   main {
     padding: 0 1vw;
+  }
+}
+
+@media (max-width: 700px) {
+  .batalhas-gregas > section {
+    grid-column: 1 / 12;
   }
 }
