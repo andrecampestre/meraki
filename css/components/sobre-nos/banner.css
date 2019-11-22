@@ -1,11 +1,18 @@
 .banner {
   height: 307px;
-  background: transparent url('../../../img/sobre-nos/3333.png') 0% 0% no-repeat padding-box;
-  background-size: cover;
-  background-position: center;
+  /* background: transparent url('../../../img/sobre-nos/3333.png') 0% 0% no-repeat padding-box; */
+  background: transparent url('../../../img/Meraki.jpg') 0% 0% no-repeat padding-box;
+  /* background-size: cover;
+  background-position: center; */
 }
 
 .banner h1 {
   font: Bold 126px/141px Abril Text;
   color: #ffffff;
+}
+
+@media (max-width: 700px) {
+  .banner {
+    background: transparent url("../../../img/responsivo/Grupo\ 6741.jpg") 0% 0% no-repeat padding-box;
+  }
 }

@@ -34,6 +34,28 @@
   width: fit-content;
 }
 
+@media (max-width: 700px) {
+  main {
+    padding: 0 1vw;
+  }
+  .sobre-nos {
+    grid-template-columns: 1fr;
+    transform: translateY(-60%);
+  }
+  .image-container {
+    display: none;
+  }
+  .text-container {
+    width: auto;
+  }
+  .text {
+    text-align: center;
+  }
+  .title {
+    text-align: center;
+  }
+}
+
 @media (max-width: 1400px) {
   .sobre-nos {
     padding: 60px;

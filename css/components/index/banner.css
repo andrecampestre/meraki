@@ -1,10 +1,11 @@
 .banner {
   height: 760px;
-  background: transparent url("../../../img/banner-5.png") 0% 0% no-repeat padding-box;
-  background-size: cover;
+  /* background: transparent url("../../../img/banner-5.png") 0% 0% no-repeat padding-box; */
+  background: transparent url("../../../img/Banner.jpg") 0% 0% no-repeat padding-box;
+  /* background-size: cover;
   background-position: center;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; */
 }
 
 .banner__title {
@@ -52,7 +53,12 @@
   opacity: 1;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 700px) {
+  .banner {
+    background: transparent url("../../../img/responsivo/Grupo\ 6742.jpg") 0% 0% no-repeat padding-box;
+  }
+}
+/* @media (max-width: 1400px) {
   .banner__title {
     margin-left: 200px;
   }
@@ -64,4 +70,4 @@
   .banner__dots {
     margin-left: 200px;
   }
-}
+} */

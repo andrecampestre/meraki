@@ -77,13 +77,15 @@
   margin-bottom: 30px;
 }
 
-.atendimento .mapa .informacoes p {
+.atendimento .mapa .informacoes p,
+.atendimento .informacoes--responsivo p {
   font: Medium 14px/18px Montserrat;
   letter-spacing: 0.42px;
   color: #8D8D8D;
 }
 
-.atendimento .mapa .informacoes p::before {
+.atendimento .mapa .informacoes p::before,
+.atendimento .informacoes--responsivo p::before {
   content: "";
   width: 20px;
   border: 1px solid #2C4C9A;
@@ -96,16 +98,38 @@
   grid-template-columns: 1fr 1fr;
 }
 
+.informacoes--responsivo {
+  display: none;
+}
+
 /* MEDIAS */
 
 @media (max-width: 700px) {
   .atendimento {
     grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    text-align: center;
   }
   .atendimento .formulario {
-    padding: 100px 5vw 100px 5vw;
+    padding: 0 5px;
+    grid-row: 2 / 2;
+    margin: 0 5vw;
   }
-  .atendimento .mapa .informacoes{
-    padding: 100px 5vw 100px 5vw;
+  .atendimento .mapa{
+    padding: 0;
+    grid-row: 1 / 1;
+  }
+  .atendimento .mapa .section-mapa{
+    height: 200px;
+  }
+  .atendimento .mapa .informacoes {
+    display: none;
+  }
+  .atendimento .informacoes--responsivo {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 20px;
+    text-align: justify;
+    margin: 10vw 5vw;
   }
 }

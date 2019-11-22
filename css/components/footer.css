@@ -109,3 +109,26 @@
 .footer .redes .telefone a {
   margin-left: 20px;
 }
+
+@media (max-width: 700px) {
+  .footer {
+    grid-template-columns: 1fr;
+  }
+  .footer .logo {
+    margin-bottom: 50px;
+  }
+  .footer .links {
+    display: none;
+  }
+  .footer .redes {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .footer .redes .endereco {
+    grid-row: 2 / 2;
+  }
+  .footer .redes .telefone {
+    grid-row: 1 / 1;
+    margin-bottom: 50px;
+  }
+}
