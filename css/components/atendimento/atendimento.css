@@ -4,6 +4,10 @@
   grid-column-gap: 50px;
 }
 
+.atendimento .formulario form {
+  display: grid;
+}
+
 .atendimento .formulario {
   display: inline-grid;
   grid-template-rows: auto;
@@ -92,14 +96,3 @@
   grid-template-columns: 1fr 1fr;
 }
 
-/* @media (min-width: 1400px) {
-  main {
-    padding-right: 0 !important;
-  }
-} */
-
-@media (max-width: 1400px) {
-  main {
-    padding: 0 0;
-  }
-}
