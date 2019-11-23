@@ -68,3 +68,36 @@
     margin-left: 40px;
   }
 }
+
+@media (max-width: 700px) {
+  .header {
+    flex-direction: column;
+    height: auto;
+  }
+  .header .brand {
+    margin: 20px 0;
+  }
+  .menu {
+    flex-direction: column;
+    text-align: center;
+  }
+  .menu .menu__link {
+    margin: 20px 0;
+  }
+  .menu .menu__link + .menu__link {
+    margin-left: 0;
+  }
+  .menu a:first-child {
+    margin-top: 50px;
+  }
+  .menu span:last-child {
+    color: #00D3FF;
+  }
+  .menu a:nth-last-child(-n+2) {
+    margin-top: 50px;
+    color:#00D3FF;
+  }
+  .menu .contact {
+    margin-left: 0;
+  }
+}
