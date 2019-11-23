@@ -15,6 +15,40 @@
   max-width: 260px;
 }
 
+.header__button {
+  display: none;
+  position: absolute;
+  top: 32px;
+  right: 40px;
+  width: 34px;
+  height: 34px;
+  cursor: pointer;
+  transition: opacity .2s ease-out;
+  cursor: pointer;
+}
+
+.header__button > span {
+  display: block;
+  width: 100%;
+  height: 4px;
+  margin: 5px auto;
+  border-radius: 1px;
+  background-color: #ffffff;
+  transition: all .2s ease-out;
+}
+
+.header__button.menu--open > span:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+
+.header__button.menu--open > span:nth-child(2) {
+    opacity: 0;
+}
+
+.header__button.menu--open > span:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
+
 .menu {
   display: flex;
   flex-direction: row;
@@ -44,13 +78,6 @@
   align-self: center;
 }
 
-/* header h3 {
-  font: Bold 18px/51px Sitka Banner;
-  color: #ffffff;
-
-} */
-
-
 @media (max-width: 1400px) {
   .header  {
       padding: 0 2vw;
@@ -71,33 +98,75 @@
 
 @media (max-width: 700px) {
   .header {
-    flex-direction: column;
+    position: sticky;
+    top: 0;
+    width: 100vw;
     height: auto;
+    overflow: hidden;
   }
+
+  .header.menu--open {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header__button {
+    display: block;
+  }
+
   .header .brand {
-    margin: 20px 0;
+    align-self: flex-start;
+    margin: 20px;
   }
+
+  .header .brand img {
+    max-width: 220px;
+  }
+
   .menu {
+    display: none;
     flex-direction: column;
     text-align: center;
   }
+
+  .menu.menu--open {
+    display: flex;
+  }
+
   .menu .menu__link {
     margin: 20px 0;
   }
+
   .menu .menu__link + .menu__link {
     margin-left: 0;
   }
-  .menu a:first-child {
-    margin-top: 50px;
-  }
-  .menu span:last-child {
+
+  .menu .contact {
     color: #00D3FF;
   }
-  .menu a:nth-last-child(-n+2) {
-    margin-top: 50px;
+
+  .menu .menu__link:nth-last-child(-n+2) {
+    margin-top: 60px;
     color:#00D3FF;
   }
+
   .menu .contact {
     margin-left: 0;
+  }
+
+  .menu .contact::after {
+    content: "";
+    display: block;
+    background-image: url('../../icons/whatsapp-blue.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 28px;
+    height: 32px;
+    margin: 20px auto;
   }
 }
