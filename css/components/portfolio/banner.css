@@ -2,11 +2,18 @@
   height: 307px;
   /* background: transparent url('../../../img/portfolio/portfolio.png') 0% 0% no-repeat padding-box; */
   background: transparent url('../../../img/Port.jpg') 0% 0% no-repeat padding-box;
-  background-size: cover;
-  background-position: center;
+  /* background-size: cover;
+  background-position: center; */
 }
 
 .banner h1 {
   font: Bold 126px/141px Abril Text;
   color: #ffffff;
+}
+
+@media (max-width: 700px) {
+  .banner {
+    max-height: 150px;
+    background: transparent url("../../../img/responsivo/Grupo\ 6740.jpg") 0% 0% no-repeat padding-box;
+  }
 }

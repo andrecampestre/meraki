@@ -5,3 +5,6 @@ function initMap() {
     zoom: 8
   });
 }
+
+// document.querySelector('#button_atendimento').classList.add('button');
+// document.querySelector('#button_atendimento').classList.add('button--light');
