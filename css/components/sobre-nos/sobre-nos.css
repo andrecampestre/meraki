@@ -151,6 +151,9 @@
   opacity: .7;
 }
 
+.areas-atuacao-responsivo {
+  display: none;
+}
 /* MEDIAS */
 
 @media (max-width: 1400px) {
@@ -187,6 +190,86 @@
   .batalhas-gregas > section {
     grid-column: 1 / 12;
     text-align: center;
+  }
+  .areas-atuacao {
+    display: none;
+  }
+
+  /* Responsividade áreas de atuação */
+  .areas-atuacao-responsivo {
+    padding: 50px;
+    display: block;
+    justify-content: center;
+  }
+
+  .areas-atuacao-responsivo .title {
+    text-align: center;
+  }
+
+  .areas-atuacao-responsivo .title::after {
+    content: '';
+    display: flex;
+    width: 120px;
+    height: 1.5px;
+    background-color: #2c4c9a;
+    margin: 20px auto;
+  }
+
+  .areas-atuacao-responsivo .text {
+    margin: 30px;
+    color: #767676;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .areas-atuacao-responsivo .solucoes {
+    display: grid;
+    grid-template-columns: 100%;
+    margin: 40px auto;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+  }
+
+  .areas-atuacao-responsivo .areas-responsivo {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-items: center;
+    height: 360px;
+    margin: 20px;
+  }
+
+  .areas-atuacao-responsivo .areas-responsivo .card {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 1;
+    height: 100%;
+    -webkit-box-shadow: 0 5px 10px #00000029;
+    -moz-box-shadow: 0 5px 10px #00000029;
+    box-shadow: 0px 5px 10px #00000029;
+  }
+
+  .areas-atuacao-responsivo .areas-responsivo .card + .card {
+    margin-left: 20px;
+  }
+
+  .areas-atuacao-responsivo .areas-responsivo .card .card-image {
+    padding: 50px;
+    align-self: center;
+    justify-self: center;
+    height: 220px;
+    width: 220px;
+  }
+
+  .areas-atuacao-responsivo .areas-responsivo .card .card-text {
+    padding: 20px;
+    font-size: 1.125em;
+    font-family: Montserrat;
+    font-weight: bold;
+    color: #2f313a;
+    text-align: center;
+    justify-self: flex-start;
   }
 }
 

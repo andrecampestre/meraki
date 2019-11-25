@@ -1,4 +1,4 @@
-let currentPage = 0;
+let currentPageResponsive = 0;
 
 areas = [
   { id: 0, img: "./../../img/Icon 3.png", titulo: "Comunicação para associações" },
@@ -11,7 +11,7 @@ areas = [
 ];
 
 function fillCarousel(items) {
-  const areas_sections = document.querySelector('.areas');
+  const areas_sections = document.querySelector('.areas-responsivo');
   areas_sections.innerHTML = '';
 
   items.forEach(area => {
@@ -34,19 +34,18 @@ function fillCarousel(items) {
 }
 
 function atualizaAreas(incremento) {
-  const newPage = currentPage + incremento;
+  const newPage = currentPageResponsive + incremento;
 
   if (newPage + 3 > areas.length || newPage < 0) return;
 
-  currentPage = newPage;
+  currentPageResponsive = newPage;
 
-  const items = areas.slice(currentPage, currentPage + 3);
+  const items = areas.slice(currentPageResponsive, currentPageResponsive + 3);
 
   fillCarousel(items);
 }
 
 window.onload = function () {
-
   const tamanhoTela = window.screen.width;
   let items;
   if (tamanhoTela <= 700) {

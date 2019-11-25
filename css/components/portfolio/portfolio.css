@@ -39,5 +39,9 @@
 @media (max-width: 700px) {
   .portfolio {
     grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .portfolio > section > p {
+    margin-bottom: 50px;
   }
 }

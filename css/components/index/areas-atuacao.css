@@ -33,7 +33,7 @@
 
 .areas-atuacao .areas {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(12, 1fr);
   align-items: center;
   height: 360px;
   margin: 0 50px;
