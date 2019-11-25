@@ -1,6 +1,6 @@
 .button {
   width: fit-content;
-  height: fit-content;
+  height: auto;
   color: #ffffff;
   font-size: 1.125em;
   font-family: 'Abril Bold';

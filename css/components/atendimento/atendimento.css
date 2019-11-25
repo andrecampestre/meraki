@@ -132,4 +132,7 @@
     text-align: justify;
     margin: 10vw 5vw;
   }
+  .atendimento .formulario h1::before {
+    display: none;
+  }
 }
