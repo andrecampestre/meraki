@@ -81,6 +81,7 @@
   flex-grow: 1;
   flex-shrink: 1;
   height: 100%;
+  grid-column: 3;
 }
 
 .areas-atuacao .areas .card + .card {
@@ -191,18 +192,18 @@
     grid-column: 1 / 12;
     text-align: center;
   }
-  .areas-atuacao {
+  /* .areas-atuacao {
     display: none;
-  }
+  } */
 
   /* Responsividade áreas de atuação */
-  .areas-atuacao-responsivo {
+  /* .areas-atuacao-responsivo {
     padding: 50px;
     display: block;
     justify-content: center;
-  }
+  } */
 
-  .areas-atuacao-responsivo .title {
+  /* .areas-atuacao-responsivo .title {
     text-align: center;
   }
 
@@ -270,6 +271,62 @@
     color: #2f313a;
     text-align: center;
     justify-self: flex-start;
+  } */
+
+
+  .areas-atuacao .areas-controle {
+  grid-column: 1 / 12;
+}
+
+.areas-atuacao .areas-controle h1 {
+  text-align: center;
+}
+
+  .areas-atuacao .areas-controle .glide__arrows {
+    display: none;
   }
+  .areas-atuacao .areas {
+    grid-column: 1 / 12;
+  }
+
+  .areas-atuacao .areas .card {
+  /* display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-shrink: 1;
+  height: 100%; */
+  /* grid-template-columns: 1fr; */
+  width: 100%;
+}
+
+/* .areas-atuacao .areas .card + .card {
+  margin-left: 40px;
+} */
+
+.areas-atuacao .areas .card .card-image {
+  padding: 30px 60px;
+  align-self: center;
+  justify-self: center;
+  background: #F7F7F7;
+  height: 200px;
+  width: 220px;
+}
+
+.areas-atuacao .areas .card .card-text {
+  padding: 20px 0;
+  font-size: 1.125em;
+  font-family: Montserrat;
+  font-weight: bold;
+  color: #6C6C6C;
+  justify-self: flex-start;
+}
+
+.areas-atuacao .areas .card .card-conteudo {
+  padding: 20px 0;
+  font-size: 0.875em;
+  font-family: Montserrat;
+  color: #707070;
+  justify-self: flex-start;
+}
 }
 

@@ -11,6 +11,8 @@
   <!--Fonts-->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap" rel="stylesheet">
 
+  <link rel="stylesheet" href="glide-3.4.1/glide.core.min.css" />
+
   <!--Arquivos base-->
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/base.css">
@@ -98,22 +100,26 @@
       </section>
     </section>
 
-    <section class="areas-atuacao">
+    <section class="areas-atuacao glide">
+
       <section class="areas-controle">
         <h1>Áreas de Atuação</h1>
-        <section>
-          <a onclick="atualizaAreas(-1)" class="control" href="javascript:void(0)">
+        <section class="glide__arrows" data-glide-el="controls">
+          <a class="glide__arrow glide__arrow--left control" data-glide-dir="<">
             <svg viewBox="0 0 477.175 477.175" style="margin-right: 5px;">
               <path
                 d="M145.188,238.575l215.5-215.5c5.3-5.3,5.3-13.8,0-19.1s-13.8-5.3-19.1,0l-225.1,225.1c-5.3,5.3-5.3,13.8,0,19.1l225.1,225 c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4c5.3-5.3,5.3-13.8,0-19.1L145.188,238.575z" />
             </svg>
           </a>
-          <div class="banner__dots" id="banner__dots">
-            <!-- <div id="item1" class="dots__item dots__item--active" data-id="1"></div>
-          <div id="item2" class="dots__item" data-id="2"></div>
-          <div id="item3" class="dots__item" data-id="3"></div> -->
+          <!-- <div class="banner__dots" id="banner__dots"> -->
+
+          <div class="glide__bullets banner__dots" data-glide-el="controls[nav]">
+            <button class="glide__bullet dots__item dots__item--active" data-glide-dir="=0"></button>
+            <button class="glide__bullet dots__item" data-glide-dir="=1"></button>
+            <button class="glide__bullet dots__item" data-glide-dir="=2"></button>
           </div>
-          <a onclick="atualizaAreas(+1)" class="control" href="javascript:void(0)">
+          </div>
+          <a class="glide__arrow glide__arrow--right control" data-glide-dir=">">
             <svg viewBox="0 0 477.175 477.175" style="margin-left: 5px;">
               <path
                 d="M360.731,229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1,0s-5.3,13.8,0,19.1l215.5,215.5l-215.5,215.5 c-5.3,5.3-5.3,13.8,0,19.1c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-4l225.1-225.1C365.931,242.875,365.931,234.275,360.731,229.075z" />
@@ -121,17 +127,115 @@
           </a>
         </section>
       </section>
-      <section class="areas"></section>
+
+      <section class="areas glide__track" data-glide-el="track">
+        <section class="glide__slides">
+          <section class="card glide__slide"><img class="card-image" src="./../../img/Icon 3.png">
+            <h4 class="card-text">Comunicação para associações 1</h4>
+            <p class="card-conteudo">Mais cedo ou mais tarde será necessário marcar presença na internet: nas redes
+              sociais,
+              através de site, blog, entre outros. Calma não estamos falando grego! Por esses canais você terá a
+              oportunidade de
+              mostrar seu produto ou serviço e também manterá uma relação mais próxima com os clientes. A Meraki
+              desenvolve
+              estratégias para que a sua empresa se destaque no mercado!</p>
+          </section>
+          <section class="card glide__slide"><img class="card-image" src="./../../img/icon1.png">
+            <h4 class="card-text">Desenvolvimento de sites 2</h4>
+            <p class="card-conteudo">Mais cedo ou mais tarde será necessário marcar presença na internet: nas redes
+              sociais,
+              através de site, blog, entre outros. Calma não estamos falando grego! Por esses canais você terá a
+              oportunidade de
+              mostrar seu produto ou serviço e também manterá uma relação mais próxima com os clientes. A Meraki
+              desenvolve
+              estratégias para que a sua empresa se destaque no mercado!</p>
+          </section>
+          <section class="card glide__slide"><img class="card-image" src="./../../img/Icon2.png">
+            <h4 class="card-text">Comunicação para eventos 3</h4>
+            <p class="card-conteudo">Mais cedo ou mais tarde será necessário marcar presença na internet: nas redes
+              sociais,
+              através de site, blog, entre outros. Calma não estamos falando grego! Por esses canais você terá a
+              oportunidade de
+              mostrar seu produto ou serviço e também manterá uma relação mais próxima com os clientes. A Meraki
+              desenvolve
+              estratégias para que a sua empresa se destaque no mercado!</p>
+          </section>
+          <section class="card glide__slide"><img class="card-image" src="./../../img/Icon2.png">
+            <h4 class="card-text">Comunicação para eventos 4</h4>
+            <p class="card-conteudo">Mais cedo ou mais tarde será necessário marcar presença na internet: nas redes
+              sociais,
+              através de site, blog, entre outros. Calma não estamos falando grego! Por esses canais você terá a
+              oportunidade de
+              mostrar seu produto ou serviço e também manterá uma relação mais próxima com os clientes. A Meraki
+              desenvolve
+              estratégias para que a sua empresa se destaque no mercado!</p>
+          </section>
+          <section class="card glide__slide"><img class="card-image" src="./../../img/Icon2.png">
+            <h4 class="card-text">Comunicação para eventos 5</h4>
+            <p class="card-conteudo">Mais cedo ou mais tarde será necessário marcar presença na internet: nas redes
+              sociais,
+              através de site, blog, entre outros. Calma não estamos falando grego! Por esses canais você terá a
+              oportunidade de
+              mostrar seu produto ou serviço e também manterá uma relação mais próxima com os clientes. A Meraki
+              desenvolve
+              estratégias para que a sua empresa se destaque no mercado!</p>
+          </section>
+          <section class="card glide__slide"><img class="card-image" src="./../../img/Icon2.png">
+            <h4 class="card-text">Comunicação para eventos 6</h4>
+            <p class="card-conteudo">Mais cedo ou mais tarde será necessário marcar presença na internet: nas redes
+              sociais,
+              através de site, blog, entre outros. Calma não estamos falando grego! Por esses canais você terá a
+              oportunidade de
+              mostrar seu produto ou serviço e também manterá uma relação mais próxima com os clientes. A Meraki
+              desenvolve
+              estratégias para que a sua empresa se destaque no mercado!</p>
+          </section>
+          <section class="card glide__slide"><img class="card-image" src="./../../img/Icon2.png">
+            <h4 class="card-text">Comunicação para eventos 7</h4>
+            <p class="card-conteudo">Mais cedo ou mais tarde será necessário marcar presença na internet: nas redes
+              sociais,
+              através de site, blog, entre outros. Calma não estamos falando grego! Por esses canais você terá a
+              oportunidade de
+              mostrar seu produto ou serviço e também manterá uma relação mais próxima com os clientes. A Meraki
+              desenvolve
+              estratégias para que a sua empresa se destaque no mercado!</p>
+          </section>
+        </section>
+      </section>
     </section>
 
-    <section class="areas-atuacao-responsivo">
+    <section class="areas-atuacao-responsivo glide">
       <h2 class="title">Áreas de Atuação</h2>
       <p class="text">
         Podemos oferecer a você e ao seu negócio as melhores soluções na área
         de comunicação! Trabalhamos com:
       </p>
-      <section class="solucoes">
+      <!-- <section class="solucoes">
         <section class="areas-responsivo"></section>
+      </section> -->
+      <section class="glide solucoes">
+        <section class="glide__track areas-responsivo" data-glide-el="track">
+          <section class="glide__slides">
+            <section class="card glide__slide"><img class="card-image" src="./../../img/Icon 3.png">
+              <p class="card-text">Comunicação para associações</p>
+            </section>
+            <section class="card glide__slide"><img class="card-image" src="./../../img/icon1.png">
+              <p class="card-text">Desenvolvimento de sites</p>
+            </section>
+            <section class="card glide__slide"><img class="card-image" src="./../../img/Icon2.png">
+              <p class="card-text">Comunicação para eventos</p>
+            </section>
+            <section class="card glide__slide"><img class="card-image" src="./../../img/Icon 3.png">
+              <p class="card-text">Comunicação para associações</p>
+            </section>
+            <section class="card glide__slide"><img class="card-image" src="./../../img/icon1.png">
+              <p class="card-text">Desenvolvimento de sites</p>
+            </section>
+            <section class="card glide__slide"><img class="card-image" src="./../../img/Icon2.png">
+              <p class="card-text">Comunicação para eventos</p>
+            </section>
+          </section>
+        </section>
       </section>
     </section>
 
@@ -180,6 +284,26 @@
   </footer>
 </body>
 
+<script type="text/javascript" src="./glide-3.4.1/glide.min.js"></script>
+<script>
+  new Glide('.glide', {
+    type: "carousel",
+    startAt: 0,
+    // dragThreshold: 6,
+    perView: 4,
+    peek: 30,
+    // gaps: 30,
+    peek: {
+      before: 10,
+      after: 0
+    },
+    gap: 20,
+    breakpoints: {
+      600: { perView: 1 },
+      1200: { perView: 3 }
+    }
+  }).mount()
+</script>
 <script type="text/javascript" src="./js/menu.js"></script>
 <script type="text/javascript" src="./js/sobre-nos/areas-atuacao.js"></script>
 

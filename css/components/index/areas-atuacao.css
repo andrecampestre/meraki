@@ -1,6 +1,6 @@
 .areas-atuacao {
   padding: 50px;
-  display: grid;
+  /* display: grid; */
   justify-content: center;
 }
 
@@ -25,7 +25,7 @@
 }
 
 .areas-atuacao .solucoes {
-  display: grid;
+  /* display: grid; */
   grid-template-columns: 1fr 6fr 1fr;
   margin: 40px auto;
 }
@@ -35,8 +35,10 @@
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   align-items: center;
-  height: 360px;
-  margin: 0 50px;
+  width: fit-content !important;
+  /* height: 360px;
+  margin: 0 50px; */
+  padding: 70px 0;
 }
 
 .areas-atuacao .areas .card {
@@ -44,15 +46,17 @@
   flex-direction: column;
   flex-grow: 1;
   flex-shrink: 1;
+  justify-content: space-around;
   height: 100%;
-  -webkit-box-shadow: 0 20px 40px #00000029;
-  -moz-box-shadow: 0 20px 40px #00000029;
-  box-shadow: 0px 20px 40px #00000029;
+  -webkit-box-shadow: 1px 10px 20px #00000029;
+  -moz-box-shadow: 1px 10px 20px #00000029;
+  box-shadow: 1px 10px 20px #00000029;
+  margin: 0 20px !important;
 }
 
-.areas-atuacao .areas .card + .card {
-  margin-left: 40px;
-}
+/* .areas-atuacao .areas .card + .card {
+  margin-left: 80px;
+} */
 
 .areas-atuacao .areas .card .card-image {
   padding: 50px;
@@ -76,6 +80,22 @@
   justify-self: center;
 }
 
+.areas-atuacao .solucoes .glide__arrows {
+  position: absolute;
+  top: calc(50% - 31px);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.areas-atuacao .solucoes .glide__track {
+  margin: 0 70px;
+}
+
+.areas-atuacao .solucoes .glide__slides .glide__slide {
+  width: 90% !important;
+}
+
 .areas-atuacao .solucoes .control {
   align-self: center;
   justify-self: center;
@@ -86,8 +106,8 @@
   background: #43beed 0% 0% no-repeat padding-box;
   box-shadow: 0px 10px 20px #00000029;
   cursor: pointer;
-  position: relative;
-
+  /* position: absolute;
+  top: calc(50% - 31px); */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -104,15 +124,19 @@
   height: 40%;
 }
 
+.areas-atuacao .button-areas {
+  display: grid;
+}
+
 @media (max-width: 700px) {
   .areas-atuacao {
     display: block;
     margin-top: -300px;
   }
 
-  .areas-atuacao .areas {
+  /* .areas-atuacao .areas {
     margin: 20px;
-  }
+  } */
 
   .areas-atuacao .solucoes {
     grid-template-columns: 100%;
@@ -126,12 +150,16 @@
   }
 
   .areas-atuacao .areas .card {
+    width: auto !important;
     -webkit-box-shadow: 0 5px 10px #00000029;
     -moz-box-shadow: 0 5px 10px #00000029;
     box-shadow: 0px 5px 10px #00000029;
   }
 
-  .areas-atuacao .areas .card + .card {
-    margin-left: 20px;
+  .areas-atuacao .solucoes .glide__track {
+    margin: 0;
   }
+  /* .areas-atuacao .areas .card + .card {
+    margin-left: 20px;
+  } */
 }

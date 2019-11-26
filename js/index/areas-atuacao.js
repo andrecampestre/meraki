@@ -1,60 +1,76 @@
-let currentPage = 0;
+// var select = document.querySelector('#options-type-select')
 
-areas = [
-  { id: 0, img: "./../../img/Icon 3.png", titulo: "Comunicação para associações" },
-  { id: 1, img: "./../../img/icon1.png", titulo: "Desenvolvimento de sites" },
-  { id: 2, img: "./../../img/Icon2.png", titulo: "Comunicação para eventos" },
-  { id: 3, img: "./../../img/Icon4.png", titulo: "Comunicação para associações" },
-  { id: 4, img: "./../../img/Icon5.png", titulo: "Desenvolvimento de sites" },
-  { id: 5, img: "./../../img/Icon4.png", titulo: "Comunicação para eventos" },
-  { id: 6, img: "./../../img/Icon2.png", titulo: "Comunicação para eventos" },
-];
+// var glide = new Glide('#areas', {
+//   focusAt: 'center',
+//   perView: 3
+// })
 
-function fillCarousel(items) {
-  const areas_sections = document.querySelector('.areas');
-  areas_sections.innerHTML = '';
+// select.addEventListener('change', function (event) {
+//   glide.update({
+//     type: event.target.value
+//   })
+// })
 
-  items.forEach(area => {
-    const section = document.createElement('section');
-    section.classList.add('card');
+// glide.mount()
 
-    const titulo = document.createElement('p');
-    titulo.classList.add('card-text');
-    titulo.innerText = area.titulo;
 
-    const imagem = document.createElement('img');
-    imagem.classList.add('card-image')
-    imagem.src = area.img;
+// let currentPage = 0;
 
-    section.appendChild(imagem);
-    section.appendChild(titulo);
+// areas = [
+//   { id: 0, img: "./../../img/Icon 3.png", titulo: "Comunicação para associações" },
+//   { id: 1, img: "./../../img/icon1.png", titulo: "Desenvolvimento de sites" },
+//   { id: 2, img: "./../../img/Icon2.png", titulo: "Comunicação para eventos" },
+//   { id: 3, img: "./../../img/Icon4.png", titulo: "Comunicação para associações" },
+//   { id: 4, img: "./../../img/Icon5.png", titulo: "Desenvolvimento de sites" },
+//   { id: 5, img: "./../../img/Icon4.png", titulo: "Comunicação para eventos" },
+//   { id: 6, img: "./../../img/Icon2.png", titulo: "Comunicação para eventos" },
+// ];
 
-    areas_sections.append(section);
-  });
-}
+// function fillCarousel(items) {
+//   const areas_sections = document.querySelector('.areas');
+//   areas_sections.innerHTML = '';
 
-function atualizaAreas(incremento) {
-  const newPage = currentPage + incremento;
+//   items.forEach(area => {
+//     const section = document.createElement('section');
+//     section.classList.add('card');
 
-  if (newPage + 3 > areas.length || newPage < 0) return;
+//     const titulo = document.createElement('p');
+//     titulo.classList.add('card-text');
+//     titulo.innerText = area.titulo;
 
-  currentPage = newPage;
+//     const imagem = document.createElement('img');
+//     imagem.classList.add('card-image')
+//     imagem.src = area.img;
 
-  const items = areas.slice(currentPage, currentPage + 3);
+//     section.appendChild(imagem);
+//     section.appendChild(titulo);
 
-  fillCarousel(items);
-}
+//     areas_sections.append(section);
+//   });
+// }
 
-window.onload = function () {
+// function atualizaAreas(incremento) {
+//   const newPage = currentPage + incremento;
 
-  const tamanhoTela = window.screen.width;
-  let items;
-  if (tamanhoTela <= 700) {
-    items = areas;
-  }
-  else {
-    items = areas.slice(0, 3);
-  }
+//   if (newPage + 3 > areas.length || newPage < 0) return;
 
-  fillCarousel(items);
-}
+//   currentPage = newPage;
+
+//   const items = areas.slice(currentPage, currentPage + 3);
+
+//   fillCarousel(items);
+// }
+
+// window.onload = function () {
+
+//   const tamanhoTela = window.screen.width;
+//   let items;
+//   if (tamanhoTela <= 700) {
+//     items = areas;
+//   }
+//   else {
+//     items = areas.slice(0, 3);
+//   }
+
+//   fillCarousel(items);
+// }
