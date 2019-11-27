@@ -162,7 +162,7 @@
   .menu .contact::after {
     content: "";
     display: block;
-    background-image: url('../../icons/whatsapp-blue.svg');
+    background-image: url('../../../icons/whatsapp-blue.svg');
     background-size: cover;
     background-repeat: no-repeat;
     width: 28px;

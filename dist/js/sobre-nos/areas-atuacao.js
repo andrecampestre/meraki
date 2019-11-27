@@ -1,5 +1,5 @@
 new Glide('.glide', {
-  type: "carousel",
+  // type: "carousel",
   startAt: 0,
   // dragThreshold: 6,
   perView: 4,
