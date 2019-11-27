@@ -67,6 +67,10 @@
   text-align: right;
 }
 
+.atendimento .formulario .button {
+  display: none;
+}
+
 .atendimento .mapa {
   display: flex;
   flex-direction: column;
@@ -134,5 +138,12 @@
   }
   .atendimento .formulario h1::before {
     display: none;
+  }
+  .atendimento .formulario #button_atendimento {
+    display: none;
+  }
+  .atendimento .formulario .button {
+    display: block;
+    justify-self: center;
   }
 }
