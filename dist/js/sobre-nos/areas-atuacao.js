@@ -3,7 +3,7 @@ new Glide('.glide', {
   startAt: 0,
   // dragThreshold: 6,
   perView: 4,
-  peek: 30,
+  // peek: 30,
   // gaps: 30,
   peek: {
     before: 10,

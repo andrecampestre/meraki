@@ -92,9 +92,9 @@
   margin: 0 70px;
 }
 
-.areas-atuacao .solucoes .glide__slides .glide__slide {
+/* .areas-atuacao .solucoes .glide__slides .glide__slide {
   width: 90% !important;
-}
+} */
 
 .areas-atuacao .solucoes .control {
   align-self: center;
@@ -159,7 +159,14 @@
   .areas-atuacao .solucoes .glide__track {
     margin: 0;
   }
+
   /* .areas-atuacao .areas .card + .card {
     margin-left: 20px;
   } */
+}
+
+@media (max-width: 1400px) {
+  .areas-atuacao .solucoes .glide__slides .glide__slide {
+    width: 90% !important;
+  }
 }

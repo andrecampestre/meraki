@@ -1,9 +1,9 @@
-new Glide('.glide', {
+new Glide(".glide", {
   // type: "carousel",
   startAt: 0,
   // dragThreshold: 6,
-  perView: 4,
-  gaps: 30,
+  perView: 3,
+  // gaps: 30,
   peek: {
     before: 10,
     after: 10
@@ -16,7 +16,10 @@ new Glide('.glide', {
       peek: {
         before: 0,
         after: 0
-      },
+      }
     },
+    1400: {
+      perView: 4,
+    }
   }
-}).mount()
+}).mount();
