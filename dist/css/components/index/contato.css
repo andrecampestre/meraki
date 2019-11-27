@@ -16,7 +16,7 @@
   margin-top: 40px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
   .contato {
     padding: 50px;
     grid-template-columns: 1fr;
