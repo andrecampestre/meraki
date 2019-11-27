@@ -71,7 +71,7 @@
 
 .areas-atuacao .areas {
   display: grid;
-  grid-column: 4 / 12;
+  grid-column: 4 / 13;
   grid-template-columns: repeat(12, 1fr);
 }
 
