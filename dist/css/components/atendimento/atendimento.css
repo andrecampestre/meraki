@@ -1,0 +1,138 @@
+.atendimento {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 50px;
+}
+
+.atendimento .formulario form {
+  display: grid;
+}
+
+.atendimento .formulario {
+  display: inline-grid;
+  grid-template-rows: auto;
+  padding: 100px 0 100px 10vw;
+}
+
+.atendimento .formulario h1 {
+  font: Bold 47px/52px Abril Text;
+  color: #43BEED;
+  padding: 20px 0;
+}
+
+.atendimento .formulario h1::before {
+  content: "";
+  width: 20px;
+  border: 1px solid #2C4C9A;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.atendimento .formulario h4 {
+  font: Medium 20px/24px Montserrat;
+  letter-spacing: 0.6px;
+  color: #838383;
+  padding: 10px 0;
+}
+
+.atendimento .formulario p {
+  font: Medium 16px/20px Montserrat;
+  letter-spacing: 0.48px;
+  color: #898989;
+  padding: 20px 0;
+}
+
+.atendimento .formulario input {
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.atendimento .formulario textarea {
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.atendimento .formulario a {
+  font: Bold 18px/32px Abril Text;
+  letter-spacing: 0.54px;
+  color: #43BEED;
+  text-align: right;
+}
+
+.atendimento .mapa {
+  display: flex;
+  flex-direction: column;
+}
+
+.atendimento .mapa .section-mapa{
+  height: 600px;
+  margin-bottom: 30px;
+}
+
+.atendimento .mapa .informacoes p,
+.atendimento .informacoes--responsivo p {
+  font: Medium 14px/18px Montserrat;
+  letter-spacing: 0.42px;
+  color: #8D8D8D;
+}
+
+.atendimento .mapa .informacoes p::before,
+.atendimento .informacoes--responsivo p::before {
+  content: "";
+  width: 20px;
+  border: 1px solid #2C4C9A;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.atendimento .mapa .informacoes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.informacoes--responsivo {
+  display: none;
+}
+
+/* MEDIAS */
+
+@media (max-width: 700px) {
+  .atendimento {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    text-align: center;
+  }
+  .atendimento .formulario {
+    padding: 0 5px;
+    grid-row: 2 / 2;
+    margin: 0 5vw;
+  }
+  .atendimento .mapa{
+    padding: 0;
+    grid-row: 1 / 1;
+  }
+  .atendimento .mapa .section-mapa{
+    height: 200px;
+  }
+  .atendimento .mapa .informacoes {
+    display: none;
+  }
+  .atendimento .informacoes--responsivo {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 20px;
+    text-align: justify;
+    margin: 10vw 5vw;
+  }
+  .atendimento .formulario h1::before {
+    display: none;
+  }
+}

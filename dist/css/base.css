@@ -1,0 +1,42 @@
+@font-face {
+  font-family: Abril Bolt;
+  src: url(../font/Abril_Text_Bold.otf);
+}
+
+@font-face {
+  font-family: Abril Regular;
+  src: url(../font/Abril_Text_Regular.otf);
+}
+
+body {
+  font-size: 16px;
+  font-family: Montserrat;
+}
+
+main {
+  padding: 0 10vw;
+}
+
+.title {
+  font-size: 2.1875em;
+  font-family: 'Abril Bold';
+  letter-spacing: -0.56px;
+  color: #43beed;
+  margin-bottom: 30px;
+}
+
+.text {
+  font-size: 1em;
+  font-family: Montserrat;
+  font-weight: '500';
+  letter-spacing: 0;
+  color: #707070;
+}
+
+textarea::placeholder {
+  font-family: Montserrat;
+}
+
+input::placeholder {
+  font-family: Montserrat;
+}

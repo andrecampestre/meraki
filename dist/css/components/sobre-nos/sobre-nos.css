@@ -1,0 +1,292 @@
+.sobre-nos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
+  padding: 50px;
+}
+
+.sobre-nos--imagem {
+  display: none;
+}
+
+.batalhas-gregas {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  padding: 50px;
+}
+
+.batalhas-gregas > section{
+  grid-column: 1 / 6;
+}
+
+.sobre-nos section > h1 {
+  font: Bold 28px/32px Abril Text;
+  color: #43BEED;
+}
+
+.sobre-nos section > p {
+  font: Medium 16px/19px Montserrat;
+  color: #707070;
+  padding: 20px 0;
+}
+
+.sobre-nos section > img {
+  transform: translateY(-20%);
+}
+
+.batalhas-gregas h1 {
+  font: Bold 28px/32px Abril Text;
+  color: #43BEED;
+}
+
+.batalhas-gregas p {
+  font: Medium 16px/19px Montserrat;
+  color: #707070;
+  padding: 20px 0;
+}
+
+.areas-atuacao {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  padding: 50px;
+}
+
+.areas-atuacao h1 {
+  font: Bold 28px/32px Abril Text;
+  color: #43BEED;
+  margin-bottom: 3em;
+}
+
+.areas-atuacao .areas-controle {
+  grid-column: 1 / 4;
+}
+
+.areas-atuacao .areas-controle section{
+  display: inline-flex;
+}
+
+.areas-atuacao .areas-controle a{
+  text-align: center;
+}
+
+.areas-atuacao .areas {
+  display: grid;
+  grid-column: 4 / 12;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.areas-atuacao .areas .card {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-shrink: 1;
+  height: 100%;
+  grid-column: 3;
+}
+
+.areas-atuacao .areas .card + .card {
+  margin-left: 40px;
+}
+
+.areas-atuacao .areas .card .card-image {
+  padding: 30px 60px;
+  align-self: center;
+  justify-self: center;
+  background: #F7F7F7;
+  height: 250px;
+  width: 280px;
+}
+
+.areas-atuacao .areas .card .card-text {
+  padding: 20px 0;
+  font-size: 1.125em;
+  font-family: Montserrat;
+  font-weight: bold;
+  color: #6C6C6C;
+  justify-self: flex-start;
+}
+
+.areas-atuacao .areas .card .card-conteudo {
+  padding: 20px 0;
+  font-size: 0.875em;
+  font-family: Montserrat;
+  color: #707070;
+  justify-self: flex-start;
+}
+
+.areas-atuacao .areas-controle .control::after {
+  color: #ffffff;
+  z-index: 3;
+}
+
+.banner__dots {
+  margin-top: 10px;
+  display: flex;
+}
+
+.dots__item {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 2px;
+  border-radius: 2px;
+  background-color: #2C4C9A;
+  opacity: .6;
+}
+
+.dots__item + .dots__item {
+  margin-left: 10px;
+}
+
+.dots__item--active {
+  opacity: 1;
+}
+
+.control > svg {
+  fill: #43beed;
+  width: 50%;
+  height: 50%;
+}
+
+.control:hover {
+  opacity: .7;
+}
+
+.areas-atuacao-responsivo {
+  display: none;
+}
+/* MEDIAS */
+
+@media (max-width: 1400px) {
+  main {
+    padding: 0 1vw;
+  }
+}
+
+@media (max-width: 700px) {
+  .sobre-nos {
+    display: block;
+    grid-template-columns: 1fr;
+    margin: 0 40px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    transform: translateY(-20%);
+    background-color: #ffffff;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 20px 40px #2b292929;
+    -moz-box-shadow: 0 20px 40px #00000029;
+    box-shadow: 0px 20px 40px #00000029;
+    text-align: center;
+  }
+  .sobre-nos section:last-child {
+    display: none;
+  }
+  .sobre-nos--imagem {
+    display: grid;
+    margin-top: -100px;
+  }
+  .sobre-nos--imagem img {
+    justify-self: center;
+  }
+  .batalhas-gregas > section {
+    grid-column: 1 / 12;
+    text-align: center;
+  }
+  .areas-atuacao {
+    display: none;
+  }
+
+
+  /* Responsividade areas de atuação */
+  .areas-atuacao-responsivo {
+    padding: 50px;
+    display: block;
+    justify-content: center;
+  }
+
+  .areas-atuacao-responsivo .title {
+    text-align: center;
+  }
+
+  .areas-atuacao-responsivo .title::after {
+    content: '';
+    display: flex;
+    width: 120px;
+    height: 1.5px;
+    background-color: #2c4c9a;
+    margin: 20px auto;
+  }
+
+  .areas-atuacao-responsivo .text {
+    margin: 30px;
+    color: #767676;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .areas-atuacao-responsivo .solucoes {
+    /* display: grid; */
+    grid-template-columns: 100%;
+    margin: 40px auto;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+  }
+
+
+  .areas-atuacao-responsivo .areas-responsivo {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-items: center;
+    width: fit-content !important;
+    /* height: 360px;
+    margin: 0 50px; */
+    padding: 70px 0;
+  }
+
+  .areas-atuacao-responsivo .areas-responsivo .card {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 1;
+    justify-content: space-around;
+    height: 100%;
+    width: auto !important;
+    -webkit-box-shadow: 0 5px 10px #00000029;
+    -moz-box-shadow: 0 5px 10px #00000029;
+    box-shadow: 0px 5px 10px #00000029;
+    margin: 0 20px !important;
+  }
+
+  .areas-atuacao-responsivo .areas-responsivo .card .card-image {
+    padding: 50px;
+    align-self: center;
+    justify-self: center;
+    height: 220px;
+    width: 220px;
+  }
+
+  .areas-atuacao-responsivo .areas-responsivo .card .card-text {
+    padding: 20px;
+    font-size: 1.125em;
+    font-family: Montserrat;
+    font-weight: bold;
+    color: #2f313a;
+    text-align: center;
+    justify-self: flex-start;
+  }
+
+  .areas-atuacao-responsivo .button {
+    justify-self: center;
+  }
+
+  .areas-atuacao-responsivo .solucoes .glide__track {
+    margin: 0;
+  }
+
+  .areas-atuacao-responsivo .solucoes .glide__slides .glide__slide {
+    width: 90% !important;
+  }
+
+}
+

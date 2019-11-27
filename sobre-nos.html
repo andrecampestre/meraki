@@ -11,17 +11,17 @@
   <!--Fonts-->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="glide-3.4.1/glide.core.min.css" />
+  <link rel="stylesheet" href="dist/glide-3.4.1/glide.core.min.css" />
 
   <!--Arquivos base-->
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="dist/css/reset.css">
+  <link rel="stylesheet" href="dist/css/base.css">
 
   <!--Componentes-->
-  <link rel="stylesheet" href="css/components/header.css">
-  <link rel="stylesheet" href="css/components/footer.css">
-  <link rel="stylesheet" href="css/components/sobre-nos/sobre-nos.css">
-  <link rel="stylesheet" href="css/components/sobre-nos/banner.css">
+  <link rel="stylesheet" href="dist/css/components/header.css">
+  <link rel="stylesheet" href="dist/css/components/footer.css">
+  <link rel="stylesheet" href="dist/css/components/sobre-nos/sobre-nos.css">
+  <link rel="stylesheet" href="dist/css/components/sobre-nos/banner.css">
 </head>
 
 <body>
@@ -204,7 +204,7 @@
       </section>
     </section>
 
-    <section class="areas-atuacao-responsivo glide">
+    <section class="areas-atuacao-responsivo">
       <h2 class="title">Áreas de Atuação</h2>
       <p class="text">
         Podemos oferecer a você e ao seu negócio as melhores soluções na área
@@ -213,26 +213,28 @@
       <!-- <section class="solucoes">
         <section class="areas-responsivo"></section>
       </section> -->
-      <section class="glide solucoes">
-        <section class="glide__track areas-responsivo" data-glide-el="track">
-          <section class="glide__slides">
-            <section class="card glide__slide"><img class="card-image" src="./../../img/Icon 3.png">
-              <p class="card-text">Comunicação para associações</p>
-            </section>
-            <section class="card glide__slide"><img class="card-image" src="./../../img/icon1.png">
-              <p class="card-text">Desenvolvimento de sites</p>
-            </section>
-            <section class="card glide__slide"><img class="card-image" src="./../../img/Icon2.png">
-              <p class="card-text">Comunicação para eventos</p>
-            </section>
-            <section class="card glide__slide"><img class="card-image" src="./../../img/Icon 3.png">
-              <p class="card-text">Comunicação para associações</p>
-            </section>
-            <section class="card glide__slide"><img class="card-image" src="./../../img/icon1.png">
-              <p class="card-text">Desenvolvimento de sites</p>
-            </section>
-            <section class="card glide__slide"><img class="card-image" src="./../../img/Icon2.png">
-              <p class="card-text">Comunicação para eventos</p>
+      <section class="solucoes">
+        <section class="glide glide-responsivo">
+          <section class="glide__track" data-glide-el="track">
+            <section class="glide__slides areas-responsivo">
+              <section class="card glide__slide"><img class="card-image" src="./../../img/Icon 3.png">
+                <p class="card-text">Comunicação para associações</p>
+              </section>
+              <section class="card glide__slide"><img class="card-image" src="./../../img/icon1.png">
+                <p class="card-text">Desenvolvimento de sites</p>
+              </section>
+              <section class="card glide__slide"><img class="card-image" src="./../../img/Icon2.png">
+                <p class="card-text">Comunicação para eventos</p>
+              </section>
+              <section class="card glide__slide"><img class="card-image" src="./../../img/Icon 3.png">
+                <p class="card-text">Comunicação para associações</p>
+              </section>
+              <section class="card glide__slide"><img class="card-image" src="./../../img/icon1.png">
+                <p class="card-text">Desenvolvimento de sites</p>
+              </section>
+              <section class="card glide__slide"><img class="card-image" src="./../../img/Icon2.png">
+                <p class="card-text">Comunicação para eventos</p>
+              </section>
             </section>
           </section>
         </section>
@@ -284,27 +286,8 @@
   </footer>
 </body>
 
-<script type="text/javascript" src="./glide-3.4.1/glide.min.js"></script>
-<script>
-  new Glide('.glide', {
-    type: "carousel",
-    startAt: 0,
-    // dragThreshold: 6,
-    perView: 4,
-    peek: 30,
-    // gaps: 30,
-    peek: {
-      before: 10,
-      after: 0
-    },
-    gap: 20,
-    breakpoints: {
-      600: { perView: 1 },
-      1200: { perView: 3 }
-    }
-  }).mount()
-</script>
-<script type="text/javascript" src="./js/menu.js"></script>
-<script type="text/javascript" src="./js/sobre-nos/areas-atuacao.js"></script>
+<script type="text/javascript" src="./dist/glide-3.4.1/glide.min.js"></script>
+<script type="text/javascript" src="./dist/js/menu.js"></script>
+<script type="text/javascript" src="./dist/js/sobre-nos/areas-atuacao.js"></script>
 
 </html>
