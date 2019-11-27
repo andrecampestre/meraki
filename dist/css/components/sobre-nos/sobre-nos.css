@@ -138,7 +138,8 @@
   margin-left: 10px;
 }
 
-.dots__item--active {
+.dots__item--active,
+.glide__bullet--active {
   opacity: 1;
 }
 
