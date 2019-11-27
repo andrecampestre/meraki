@@ -145,5 +145,6 @@
   .atendimento .formulario .button {
     display: block;
     justify-self: center;
+    margin-top: 30px;
   }
 }
